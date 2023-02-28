@@ -1,6 +1,6 @@
 # ---------- 28.02.23 ----------(1)
 
-## Dating
+## Dating 👍🏻
 
        ✅ About my self (Arslonbek Alimbaev, 2001y TATU)
        ✅ About your self
@@ -8,14 +8,14 @@
               🔷 Address
               🔷 Work or Study
 
-## Explain Course
+## Explain Course 👍🏻
 
        ✅ HTML & CSS (2 month)
        ✅ JavaScript (4 month)
        ✅ React & Typescript (3 month)
        ✅ React & Redux & Others... (1 month)
 
-## HTML & CSS
+## HTML & CSS (2m) 👍🏻
 
        ✅ BASICS
               🔷 Web fundamentals
@@ -28,33 +28,33 @@
 
 ## Installing Apps
 
-       ✅ Visual Studio Code (VS Code) - https://code.visualstudio.com/download
+       ✅ Visual Studio Code (VS Code) - https://code.visualstudio.com/download 👍🏻
               🔷 Live Server (Extension)
               🔷 Prettier (Extension)
               🔷 Material icon theme (Extension)
 
        ✅ Node Js - https://nodejs.org/en/
-       ✅ Google Chrome - https://bit.ly/3zRyvQS
+       ✅ Google Chrome - https://bit.ly/3zRyvQS 👍🏻
        ✅ Github registration - https://github.com
 
 ## Web fundamentals
 
-       ✅ what is front-end
-       ✅ keynote basics.key
-       ✅ keynote web-fun.key
-       ✅ How the Web Works
-       ✅ Inspecting HTTP Requests and Responses
-       ✅ Write HTML codes
-       ✅ Write CSS codes
-       ✅ Formatting Code
-       ✅ Inspecting Pages Using Chrome DevTools
+       ✅ what is front-end 👍🏻
+       ✅ keynote basics.key 👍🏻
+       ✅ keynote web-fun.key 👍🏻
+       ✅ How the Web Works 👍🏻
+       ✅ Inspecting HTTP Requests and Responses 👍🏻
+       ✅ Write HTML codes 👍🏻
+       ✅ Write CSS codes 👍🏻
+       ✅ Formatting Code 👍🏻
+       ✅ Inspecting Pages Using Chrome DevTools 👍🏻
        ✅ We Validate Our Codes (HTML || CSS)
-              🔷 HTML -> https://validator.w3.org/
-              🔷 CSS -> https://jigsaw.w3.org/css-validator/
+              🔷 HTML -> https://validator.w3.org/ 👍🏻
+              🔷 CSS -> https://jigsaw.w3.org/css-validator/ 👍🏻
 
 ## HTML Basics
 
-       ✅ Introduction
+       ✅ Introduction 👍🏻
        ✅ The Head Section
               🔷 ASCII    -   https://www.asciitable.com/
               🔷 UNICODE  -   https://unicode-table.com/
