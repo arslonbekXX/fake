@@ -12,8 +12,8 @@
 
        ✅ HTML & CSS (2 month)
        ✅ JavaScript (4 month)
-       ✅ React (2 month)
-       ✅ React & Redux & Others... (2 month)
+       ✅ React & Typescript (3 month)
+       ✅ React & Redux & Others... (1 month)
 
 ## HTML & CSS
 
