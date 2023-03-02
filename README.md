@@ -60,14 +60,26 @@
               🔷 UNICODE  -   https://unicode-table.com/
        ✅ Text
        ✅ Entities
-       ✅ File & folder paths
+       ✅ File & folder paths 👍🏻
        ✅ Hyperlinks
-              🔷 Redirect new HTML file
-              🔷 Download
-              🔷 Go to section
+            🎁 Redirect new HTML file
+            🎁 Download
+            🎁 Go to section
+            🎁 mailto
+            🎁 tel
        ✅ Video and Audio
+            🎁 can i use
        ✅ Lists
+            🎁 ul
+            🎁 ol
+            🎁 li
        ✅ Tables
+            🎁 DRY -> Don't repeat yourself
+            🎁 tr
+            🎁 th
+            🎁 td
+            🎁 thead
+            🎁 tbody
 
 [Github Repo](https://github.com/arslonbekXX/pdp-g-10.git)
 [Figma](https://bit.ly/3KD9KhG)
