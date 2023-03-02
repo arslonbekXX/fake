@@ -1,4 +1,4 @@
-# ---------- 28.02.23 ----------(1)
+# ---------- 02.03.23 ----------(2)
 
 ## Dating 👍🏻
 
@@ -58,28 +58,33 @@
        ✅ The Head Section
               🔷 ASCII    -   https://www.asciitable.com/
               🔷 UNICODE  -   https://unicode-table.com/
-       ✅ Text
-       ✅ Entities
+       ✅ Block element and inline element 👍🏻
+       ✅ Text 👍🏻
+       ✅ Entities 👍🏻
        ✅ File & folder paths 👍🏻
-       ✅ Hyperlinks
-            🎁 Redirect new HTML file
-            🎁 Download
-            🎁 Go to section
-            🎁 mailto
-            🎁 tel
-       ✅ Video and Audio
+       ✅ Hyperlinks 👍🏻
+            🎁 Redirect new HTML file 👍🏻
+            🎁 Download 👍🏻
+            🎁 Go to section 👍🏻
+            🎁 mailto 👍🏻
+            🎁 tel 👍🏻
+       ✅ Video and Audio 👍🏻
             🎁 can i use
-       ✅ Lists
+       ✅ Lists 👍🏻
             🎁 ul
             🎁 ol
             🎁 li
        ✅ Tables
-            🎁 DRY -> Don't repeat yourself
-            🎁 tr
-            🎁 th
-            🎁 td
-            🎁 thead
-            🎁 tbody
+            🎁 DRY -> Don't repeat yourself 👍🏻
+            🎁 tr -> table row 👍🏻
+            🎁 th -> table heading 👍🏻
+            🎁 td -> table data 👍🏻
+            🎁 thead 👍🏻
+            🎁 tbody 👍🏻
+            🎁 rowspan 👍🏻
+            🎁 colspan 👍🏻
 
 [Github Repo](https://github.com/arslonbekXX/pdp-g-10.git)
 [Figma](https://bit.ly/3KD9KhG)
+
+https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references
