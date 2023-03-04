@@ -10,7 +10,7 @@
        ✅ Borders
        ✅ Shadows
 
-## Providing CSS && Providing priority
+## Providing CSS && Providing priority 👍🏻
 
        ✅ Inline
        ✅ Internal
@@ -22,16 +22,18 @@
 
 ## Basic Selectors
 
-       ✅ What is selector
-       ✅ TYPE
-       ✅ ID
-       ✅ CLASS
-       ✅ ATTRIBUTE
-       ✅ ALL ELEMENTS
+       ✅ What is selector 👍🏻
+       ✅ TYPE 👍🏻
+       ✅ ID 👍🏻
+       ✅ CLASS 👍🏻
+       ✅ ATTRIBUTE 👍🏻
+       ✅ ALL ELEMENTS 👍🏻
 
 ## Relational Selectors
 
-       ✅ [ ] -> descendant selector
-       ✅ [>] -> child selector
-       ✅ [+] -> adjacent sibling selector
-       ✅ [~] -> adjacent sibling selector
+       ✅ [ ] -> descendant selector 👍🏻
+       ✅ [>] -> child selector 👍🏻
+       ✅ [+] -> adjacent sibling selector 👍🏻
+       ✅ [~] -> adjacent sibling selector 👍🏻
+
+## Hover
