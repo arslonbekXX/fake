@@ -1,11 +1,15 @@
-body {
-	margin: 0;
-	display: grid;
-	place-items: center;
-	height: 100vh;
-	background-color: #efed40;
-}
+/* ul li > div {
+	background-color: red;
+} */
 
-h1 {
-	font-size: 80px;
+/* ul > * > * {
+	background-color: red;
+} */
+
+/* ul {
+	background-color: red;
+} */
+
+ul li + * {
+	background-color: blue;
 }

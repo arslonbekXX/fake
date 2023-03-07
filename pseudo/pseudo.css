@@ -1,0 +1,47 @@
+/* li:hover {
+	background-color: blue;
+	color: white;
+} */
+
+/* li:first-child {
+	background-color: red;
+} */
+
+/* ul :first-child {
+	background-color: red;
+} */
+/*
+ul :last-child {
+	background-color: blue;
+} */
+
+/* ul > :first-child > :last-child {
+	background-color: red;
+} */
+
+* {
+	margin: 0;
+}
+/*
+ul *:last-of-type {
+	background-color: red;
+} */
+
+/* ul > :nth-child(3) {
+	background-color: red;
+} */
+
+/* ul li:nth-child(2n) {
+	background-color: red;
+} */
+
+/* ul :nth-of-type(3) {
+	background-color: blue;
+}
+ul :nth-last-of-type(2) {
+	background-color: red;
+}
+
+ul :empty {
+	background-color: white;
+} */

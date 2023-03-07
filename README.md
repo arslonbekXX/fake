@@ -21,19 +21,19 @@
 ## Pseudo Class Selectors
 
        ✅ :root
-       ✅ :empty
-       ✅ :first-child
-       ✅ :first-of-type
-       ✅ :last-child
-       ✅ :last-of-type
-       ✅ :nth-child(n)
+       ✅ :empty 👍🏻
+       ✅ :first-child 👍🏻
+       ✅ :first-of-type 👍🏻
+       ✅ :last-child 👍🏻
+       ✅ :last-of-type 👍🏻
+       ✅ :nth-child(n) 👍🏻
               🎁 odd(toq)
               🎁 even(juft)
-       ✅ :nth-last-child(n)
-       ✅ :nth-of-type(n)
-       ✅ :nth-last-of-type(n)
+       ✅ :nth-last-child(n) 👍🏻
+       ✅ :nth-of-type(n) 👍🏻
+       ✅ :nth-last-of-type(n) 👍🏻
        ✅ :visited
-       ✅ :hover
+       ✅ :hover 👍🏻
        ✅ :active
        ✅ :focus
        ✅ :not
