@@ -1,33 +1,11 @@
-/* #paragraph-1,
-#paragraph-2 {
-	background-color: blue !important;
-	color: yellow !important;
-} */
-
-/* li {
-	background-color: red;
-} */
-/*
-.box {
-	background-color: yellow;
-	color: black;
+body {
+	margin: 0;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: #efed40;
 }
 
-.item {
-	background-color: red;
-	color: #fff;
-} */
-/*
-li[guruh] {
-	background-color: yellow;
-} */
-
-/* p,
-li {
-	background-color: red;
-	color: white;
-} */
-* {
-	background-color: red;
-	color: white;
+h1 {
+	font-size: 80px;
 }

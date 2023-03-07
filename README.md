@@ -1,24 +1,6 @@
-# ---------- 04.03.23 ----------(3)
+# ---------- 07.03.23 ----------(4)
 
-## Explain CSS Basics
-
-       ✅ Providing CSS
-       ✅ Normalizing CSS
-       ✅ Selectors
-       ✅ Colors
-       ✅ Gradients
-       ✅ Borders
-       ✅ Shadows
-
-## Providing CSS && Providing priority 👍🏻
-
-       ✅ Inline
-       ✅ Internal
-       ✅ External
-
-## Normalizing CSS
-
-       ✅ https://necolas.github.io/normalize.css/
+## Checking homeworks
 
 ## Basic Selectors
 
@@ -35,5 +17,33 @@
        ✅ [>] -> child selector 👍🏻
        ✅ [+] -> adjacent sibling selector 👍🏻
        ✅ [~] -> adjacent sibling selector 👍🏻
+
+## Pseudo Class Selectors
+
+       ✅ :root
+       ✅ :empty
+       ✅ :first-child
+       ✅ :first-of-type
+       ✅ :last-child
+       ✅ :last-of-type
+       ✅ :nth-child(n)
+              🎁 odd(toq)
+              🎁 even(juft)
+       ✅ :nth-last-child(n)
+       ✅ :nth-of-type(n)
+       ✅ :nth-last-of-type(n)
+       ✅ :visited
+       ✅ :hover
+       ✅ :active
+       ✅ :focus
+       ✅ :not
+
+## Pseudo-element Selectors
+
+         ✅ ::first-latter
+         ✅ ::first-line
+         ✅ ::selection
+         ✅ ::before
+         ✅ ::after
 
 ## Hover
