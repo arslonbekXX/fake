@@ -10,6 +10,111 @@
 	background-color: red;
 } */
 
-ul li + * {
+/* ul li + * {
 	background-color: blue;
+} */
+/* ul > :first-child {
+	background-color: red;
+} */
+
+/* ul :nth-child(odd)::marker {
+	content: "✅";
 }
+ul :nth-child(even)::marker {
+	content: "🔷";
+} */
+
+/* a:hover {
+	color: red;
+}
+
+a:visited {
+	font-weight: bold;
+	color: yellow;
+} */
+
+/* .btn {
+	background-color: transparent;
+	color: black;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.03s linear transform, 0.03s linear box-shadow;
+}
+
+.btn:hover {
+	box-shadow: 0px 0px 1px 0px #0000007d;
+}
+
+.btn:active {
+	transform: scale(0.97);
+} */
+
+/* input:focus {
+	background-color: red;
+	color: #fff;
+} */
+
+p {
+	text-align: justify;
+}
+
+/* p::first-line {
+	background-color: red;
+	color: white;
+} */
+
+/* p::selection {
+	background-color: #02b533;
+	color: white;
+} */
+
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	font-size: 20px;
+	border: 1px solid;
+	position: relative;
+	box-sizing: border-box;
+}
+.box::after,
+.box::before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	display: none;
+}
+
+.box::before {
+	left: 50%;
+	top: 50%;
+}
+
+.box:hover::after,
+.box:hover::before {
+	display: block;
+}
+/* .box::after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	display: block;
+
+} */
+
+/* .box::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	display: block;
+}
+
+li::marker {
+	content: "✅";
+} */

@@ -4,7 +4,6 @@
 
 ## Pseudo Class Selectors
 
-       ✅ :root
        ✅ :empty 👍🏻
        ✅ :first-child 👍🏻
        ✅ :first-of-type 👍🏻
@@ -16,19 +15,19 @@
        ✅ :nth-last-child(n) 👍🏻
        ✅ :nth-of-type(n) 👍🏻
        ✅ :nth-last-of-type(n) 👍🏻
-       ✅ :visited
+       ✅ :visited 👍🏻
        ✅ :hover 👍🏻
-       ✅ :active
-       ✅ :focus
-       ✅ :not
+       ✅ :active 👍🏻
+       ✅ :focus 👍🏻
+       ✅ :not 👍🏻
 
 ## Pseudo-element Selectors
 
-         ✅ ::first-latter
-         ✅ ::first-line
-         ✅ ::selection
-         ✅ ::before
-         ✅ ::after
+         ✅ ::first-latter 👍🏻
+         ✅ ::first-line 👍🏻
+         ✅ ::selection 👍🏻
+         ✅ ::before 👍🏻
+         ✅ ::after 👍🏻
 
 ## 5️⃣ Selectors Specificity
 
