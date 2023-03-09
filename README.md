@@ -2,22 +2,6 @@
 
 ## Checking homeworks
 
-## Basic Selectors
-
-       ✅ What is selector 👍🏻
-       ✅ TYPE 👍🏻
-       ✅ ID 👍🏻
-       ✅ CLASS 👍🏻
-       ✅ ATTRIBUTE 👍🏻
-       ✅ ALL ELEMENTS 👍🏻
-
-## Relational Selectors
-
-       ✅ [ ] -> descendant selector 👍🏻
-       ✅ [>] -> child selector 👍🏻
-       ✅ [+] -> adjacent sibling selector 👍🏻
-       ✅ [~] -> adjacent sibling selector 👍🏻
-
 ## Pseudo Class Selectors
 
        ✅ :root
@@ -46,4 +30,22 @@
          ✅ ::before
          ✅ ::after
 
-## Hover
+## 5️⃣ Selectors Specificity
+
+           ✅ Explain site -> https://css-tricks.com/specifics-on-css-specificity/
+           ✅ SITE -> https://specifishity.com/
+
+## 6️⃣ :not pseudo-class selector
+
+           ✅ :not(simple selector)
+           ✅ Negations may not be nested (ichma-ich negativlardan foydalanish mumkin emas) -> :not(:not) !
+           ✅ no specificity
+           ✅ not use pseudo-element selectors
+
+## 5️⃣ Inheritance
+
+## 6️⃣ Colors
+
+           ✅ Named colors
+           ✅ RGB(Red, Green, Blue) | RGBA(Red, Green, Blue,Alfa)
+           ✅ HEX
