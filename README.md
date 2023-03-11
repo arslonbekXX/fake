@@ -1,6 +1,6 @@
 # ---------- 11.03.23 ----------(6)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
 ## Selectors Specificity
 
@@ -9,12 +9,12 @@
 
 ## :not pseudo-class selector
 
-           ✅ :not(simple selector)
+           ✅ :not(simple selector) 👍🏻
            ✅ Negations may not be nested (ichma-ich negativlardan foydalanish mumkin emas) -> :not(:not) !
            ✅ no specificity
            ✅ not use pseudo-element selectors
 
-## Inheritance
+## Inheritance 👍🏻
 
 ## Colors
 

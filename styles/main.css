@@ -1,120 +1,90 @@
-/* ul li > div {
-	background-color: red;
-} */
-
-/* ul > * > * {
-	background-color: red;
-} */
-
-/* ul {
-	background-color: red;
-} */
-
-/* ul li + * {
-	background-color: blue;
-} */
-/* ul > :first-child {
-	background-color: red;
-} */
-
-/* ul :nth-child(odd)::marker {
-	content: "✅";
+body {
+	display: grid;
+	place-items: center;
+	margin: 0;
+	height: 100vh;
 }
-ul :nth-child(even)::marker {
-	content: "🔷";
-} */
-
-/* a:hover {
+/** {
 	color: red;
 }
-
-a:visited {
-	font-weight: bold;
-	color: yellow;
-} */
-
-/* .btn {
-	background-color: transparent;
-	color: black;
-	padding: 1rem 2rem;
-	border: none;
-	border-radius: 6px;
-	cursor: pointer;
-	transition: 0.03s linear transform, 0.03s linear box-shadow;
+ul li {
+	color: blue;
 }
-
-.btn:hover {
-	box-shadow: 0px 0px 1px 0px #0000007d;
-}
-
-.btn:active {
-	transform: scale(0.97);
-} */
-
-/* input:focus {
-	background-color: red;
+li {
 	color: #fff;
-} */
-
-p {
-	text-align: justify;
 }
 
-/* p::first-line {
-	background-color: red;
-	color: white;
+[my="best"] {
+	color: dodgerblue;
+}
+.box {
+	color: yellow;
+}
+
+ul :first-child {
+	color: green;
+}
+
+#list-5 {
+	color: red;
 } */
 
-/* p::selection {
-	background-color: #02b533;
-	color: white;
+/* #box ul li span[href="#"] {
 } */
+
+/* ul li span[href="#"] p[id="123"] {
+}
+
+input[type="checkbox"]:not(.app) {
+} */
+
+/* h1[] */
 
 .box {
-	width: 200px;
-	height: 200px;
-	background-color: black;
-	font-size: 20px;
-	border: 1px solid;
+	width: 400px;
+	height: 400px;
+	background-color: dodgerblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: relative;
-	box-sizing: border-box;
 }
-.box::after,
+
 .box::before {
 	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	display: none;
+	background-color: transparent;
+	border: 4px dashed;
+	left: -40px;
+	bottom: -40px;
+	z-index: -1;
 }
 
-.box::before {
-	left: 50%;
-	top: 50%;
+div {
+	color: red;
+	font-size: 30px;
+}
+ul {
+	color: blue;
+	font-size: 5px;
 }
 
-.box:hover::after,
-.box:hover::before {
-	display: block;
-}
-/* .box::after {
-	content: "";
-	width: 20px;
-	height: 20px;
-	background-color: red;
-	display: block;
-
-} */
-
-/* .box::before {
-	content: "";
-	width: 20px;
-	height: 20px;
-	background-color: red;
-	display: block;
+li {
+	/* color: initial; */
+	font-size: initial;
 }
 
-li::marker {
-	content: "✅";
-} */
+li {
+	color: unset;
+}
+
+a {
+	/* color: yellow; */
+}
+
+div {
+	color: red;
+}
