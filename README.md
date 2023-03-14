@@ -1,33 +1,35 @@
 # ---------- 14.03.23 ----------(7)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
-## Inheritance
+## Inheritance 👍🏻
 
-## Colors
+## Variables 👍🏻
+
+## Colors 👍🏻
 
            ✅ Named colors
            ✅ RGB(Red, Green, Blue) | RGBA(Red, Green, Blue,Alfa)
-           ✅ HEX
+           ✅ HEX (#ffffff)
 
-## [Practice](https://bit.ly/3ZZdi29)
+## [Practice](https://bit.ly/3ZZdi29) 👍🏻
 
-## Gradients 👍🏻
+## Gradients
 
        ✅ Linear-gradient 👍🏻
-       ✅ Radial-gradient 👍🏻
+       ✅ Radial-gradient
 
-## Borders 👍🏻
+## Borders
 
        ✅ border-width
        ✅ border-style
        ✅ border-color
        ✅ border
 
-## Shadows 👍🏻
+## Shadows
 
-       ✅ box-shadow 👍🏻
+       ✅ box-shadow
               🎁 outset shadow
               🎁 inset shadow
-       ✅ text-shadow 👍🏻
-       ✅ drop-shadow 👍🏻
+       ✅ text-shadow
+       ✅ drop-shadow

@@ -1,90 +1,71 @@
+:root {
+	--bg: black;
+	--color: white;
+}
+
 body {
 	display: grid;
-	place-items: center;
-	margin: 0;
 	height: 100vh;
+	margin: 0;
+	place-items: center;
 }
-/** {
-	color: red;
-}
-ul li {
-	color: blue;
-}
-li {
-	color: #fff;
-}
-
-[my="best"] {
-	color: dodgerblue;
-}
-.box {
-	color: yellow;
-}
-
-ul :first-child {
-	color: green;
-}
-
-#list-5 {
-	color: red;
-} */
-
-/* #box ul li span[href="#"] {
-} */
-
-/* ul li span[href="#"] p[id="123"] {
-}
-
-input[type="checkbox"]:not(.app) {
-} */
-
-/* h1[] */
-
-.box {
-	width: 400px;
-	height: 400px;
-	background-color: dodgerblue;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-}
-
-.box::before {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-color: transparent;
-	border: 4px dashed;
-	left: -40px;
-	bottom: -40px;
-	z-index: -1;
-}
-
-div {
-	color: red;
-	font-size: 30px;
-}
+/*
 ul {
-	color: blue;
-	font-size: 5px;
-}
-
-li {
-	/* color: initial; */
-	font-size: initial;
-}
-
-li {
-	color: unset;
+	list-style-type: none;
+	font-size: 40px;
+	background-color: var(--bg);
 }
 
 a {
-	/* color: yellow; */
+	font-size: 20px;
+	text-decoration: none;
+	color: var(--color);
 }
 
-div {
+ul li {
+	color: var(--color);
+} */
+
+.boxes {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: absolute;
+}
+
+.box {
+	width: 180px;
+	height: 180px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 180px;
+	color: #000;
+	background-color: var(--bg);
+}
+
+/* named Colors */
+/* red, green, blue, yellow */
+
+/* .box:first-child {
+	background-color: rgb(0, 0, 200) !important;
+} */
+/* .box:first-child {
+	background-color: #00f !important;
+}
+
+.box:first-child:hover {
+	transition: 0.3s linear all;
+	background-color: rgba(0, 0, 200, 0.5) !important;
 	color: red;
+} */
+
+.box {
+	width: 700px;
+	height: 400px;
+	background-image: linear-gradient(to right, yellow, red, blue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 80px;
+	color: #fff;
 }
