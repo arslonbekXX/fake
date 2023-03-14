@@ -1,22 +1,10 @@
-# ---------- 14.03.23 ----------(7)
+# ---------- 16.03.23 ----------(8)
 
-## Checking homeworks 👍🏻
-
-## Inheritance 👍🏻
-
-## Variables 👍🏻
-
-## Colors 👍🏻
-
-           ✅ Named colors
-           ✅ RGB(Red, Green, Blue) | RGBA(Red, Green, Blue,Alfa)
-           ✅ HEX (#ffffff)
-
-## [Practice](https://bit.ly/3ZZdi29) 👍🏻
+## Checking homeworks
 
 ## Gradients
 
-       ✅ Linear-gradient 👍🏻
+       ✅ Linear-gradient
        ✅ Radial-gradient
 
 ## Borders
@@ -33,3 +21,11 @@
               🎁 inset shadow
        ✅ text-shadow
        ✅ drop-shadow
+
+## Explain new part (advanced)
+
+## Layout
+
+       ✅ Box Model
+       ✅ Sizing Elements
+       ✅ Overflowing
