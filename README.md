@@ -1,20 +1,8 @@
-# ---------- 11.03.23 ----------(6)
+# ---------- 14.03.23 ----------(7)
 
-## Checking homeworks 👍🏻
+## Checking homeworks
 
-## Selectors Specificity
-
-           ✅ Explain site -> https://css-tricks.com/specifics-on-css-specificity/
-           ✅ SITE -> https://specifishity.com/
-
-## :not pseudo-class selector
-
-           ✅ :not(simple selector) 👍🏻
-           ✅ Negations may not be nested (ichma-ich negativlardan foydalanish mumkin emas) -> :not(:not) !
-           ✅ no specificity
-           ✅ not use pseudo-element selectors
-
-## Inheritance 👍🏻
+## Inheritance
 
 ## Colors
 
@@ -23,3 +11,23 @@
            ✅ HEX
 
 ## [Practice](https://bit.ly/3ZZdi29)
+
+## Gradients 👍🏻
+
+       ✅ Linear-gradient 👍🏻
+       ✅ Radial-gradient 👍🏻
+
+## Borders 👍🏻
+
+       ✅ border-width
+       ✅ border-style
+       ✅ border-color
+       ✅ border
+
+## Shadows 👍🏻
+
+       ✅ box-shadow 👍🏻
+              🎁 outset shadow
+              🎁 inset shadow
+       ✅ text-shadow 👍🏻
+       ✅ drop-shadow 👍🏻
