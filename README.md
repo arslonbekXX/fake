@@ -43,11 +43,8 @@
                     🎁 space-around
 
          🏆 Properties for the Children
-               🔷 order
-               🔷 flex-grow
-               🔷 flex-shrink
-               🔷 flex-basis
-               🔷 align-self
+               🔷 order 👍🏻
+               🔷 align-self 👍🏻
                     🎁 flex-start
                     🎁 flex-end
                     🎁 center

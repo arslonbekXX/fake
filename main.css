@@ -5,6 +5,9 @@ body {
 	margin: 0;
 }
 /* .box {
+
+
+
 	width: 100vw;
 	height: 50vh;
 	background-color: #efed40;
@@ -39,7 +42,10 @@ body {
 
 .boxes {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
+}
+
+.box:first-child {
+	align-self: flex-start;
 }
