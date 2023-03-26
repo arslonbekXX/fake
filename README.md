@@ -5,27 +5,27 @@
         ✅ FlexBox
           🏆 Properties for the Parent
                🔷 flex-direction
-                    🎁 row | row-reverse
-                    🎁 column | column-reverse
+                    🎁 row | row-reverse 👍🏻
+                    🎁 column | column-reverse 👍🏻
                🔷 flex-wrap
-                    🎁 nowrap
-                    🎁 wrap
-                    🎁 wrap-reverse
+                    🎁 nowrap 👍🏻
+                    🎁 wrap 👍🏻
+                    🎁 wrap-reverse 👍🏻
 
-               🔷 flex-flow
+               🔷 flex-flow 👍🏻
 
-               🔷 Axes
+               🔷 Axes 👍🏻
                     x-axes
                     y-axes
 
-               🔷 align-items(y-axes)
-                    🎁 flex-start
-                    🎁 flex-end
-                    🎁 center
-                    🎁 stretch
-                    🎁 baseline
+               🔷 align-items(y-axes) 👍🏻
+                    🎁 flex-start 👍🏻
+                    🎁 flex-end 👍🏻
+                    🎁 center 👍🏻
+                    🎁 stretch 👍🏻
+                    🎁 baseline 👍🏻
 
-               🔷 justify-content(x-axes)
+               🔷 justify-content(x-axes) 👍🏻
                     🎁 flex-start
                     🎁 flex-end
                     🎁 center

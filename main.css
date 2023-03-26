@@ -3,7 +3,6 @@
 }
 body {
 	margin: 0;
-	height: 400vh;
 }
 /* .box {
 	width: 100vw;
@@ -22,6 +21,12 @@ body {
 	width: 100vw;
 }
 
+.boxes {
+	width: 100vw;
+	height: 100vh;
+	border: 4px solid black;
+}
+
 .box {
 	width: 200px;
 	height: 200px;
@@ -33,15 +38,8 @@ body {
 }
 
 .boxes {
-	width: 100vw;
-	border: 4px solid lightgray;
-}
-
-.box-2 {
-	position: fixed;
-	right: 50px;
-	bottom: 50px;
-	left: 50px;
-	width: auto;
-	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 }
