@@ -1,51 +1,11 @@
-* {
-	box-sizing: border-box;
-}
 body {
-	margin: 0;
-}
-/* .box {
-
-
-
-	width: 100vw;
-	height: 50vh;
-	background-color: #efed40;
-} */
-/*
-.inner {
-	height: 200%;
-	background-color: red;
-	font-size: 20px;
-	width: 50vw;
-} */
-
-.boxes {
-	width: 100vw;
-}
-
-.boxes {
-	width: 100vw;
-	height: 100vh;
-	border: 4px solid black;
-}
-
-.box {
-	width: 200px;
-	height: 200px;
-	background-color: var(--bg);
-	color: #fff;
 	display: grid;
+	height: 100vh;
+	margin: 0;
 	place-items: center;
-	font-size: 40px;
+	background-color: #efed40;
 }
 
-.boxes {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.box:first-child {
-	align-self: flex-start;
+h1 {
+	font-size: 80px;
 }
