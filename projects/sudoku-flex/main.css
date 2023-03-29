@@ -1,0 +1,50 @@
+:root {
+	--primary: #161c24;
+	--gray: #94a3b7;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	height: 100vh;
+	place-items: center;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	background-color: var(--primary);
+	padding: 4px;
+}
+
+.game-row {
+	display: flex;
+	gap: 4px;
+	background-color: var(--primary);
+}
+
+.board {
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+	gap: 2px;
+	background-color: var(--gray);
+}
+
+.board .row {
+	display: flex;
+	gap: 2px;
+	background-color: var(--gray);
+}
+
+.cell {
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	background-color: #fff;
+	color: var(--primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,12 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	display: grid;
-	height: 100vh;
 	margin: 0;
+	height: 100vh;
+	display: grid;
 	place-items: center;
 	background-color: #efed40;
 }
 
 h1 {
 	font-size: 80px;
-	user-select: none;
 }
