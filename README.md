@@ -1,49 +1,49 @@
 # ---------- 30.03.23 ----------(13)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
-## FlexBox practice
+## FlexBox practice 👍🏻
 
-## Grid
+## Grid 👍🏻
 
-## Important Terminology
+## Important Terminology 👍🏻
 
-          ✅ Grid Container
-          ✅ Grid Line
-          ✅ Grid Track
-          ✅ Grid Area
-          ✅ Grid Item
-          ✅ Grid Cell
-          ✅ Grid Gap
+          ✅ Grid Container 👍🏻
+          ✅ Grid Line 👍🏻
+          ✅ Grid Track 👍🏻
+          ✅ Grid Area 👍🏻
+          ✅ Grid Item 👍🏻
+          ✅ Grid Cell 👍🏻
+          ✅ Grid Gap 👍🏻
 
 ## Parent Properties
 
-          ✅ display
+          ✅ display 👍🏻
                🎁 grid
 
           ✅ sizes units
-               🎁 px
-               🎁 auto
-               🎁 %
-               🎁 fr
+               🎁 px 👍🏻
+               🎁 auto 👍🏻
+               🎁 % 👍🏻
+               🎁 fr 👍🏻
 
-          ✅ grid-template-columns
-          ✅ grid-template-rows
-          ✅ grid-template: rows / columns
-          ✅ justify-items
+          ✅ grid-template-columns 👍🏻
+          ✅ grid-template-rows 👍🏻
+          ✅ grid-template: rows / columns 👍🏻
+          ✅ justify-items 👍🏻
                🎁 stretch
                🎁 start
                🎁 end
                🎁 center
-          ✅ align-items
+          ✅ align-items 👍🏻
                🎁 stretch
                🎁 start
                🎁 end
                🎁 center
                🎁 baseline
-          ✅ place-items
-          ✅ justify-content
-          ✅ align-content
+          ✅ place-items : justify-items align-items 👍🏻
+          ✅ justify-content 👍🏻
+          ✅ align-content 👍🏻
 
 ## Child Properties
 
@@ -69,8 +69,11 @@
     ✅ https://www.youtube.com/watch?v=Dz9BzY21Zks&list=PLQkVA6z3dFvbnBJetfYDAF3-cG_ubgdZR
     ✅ https://courses.wesbos.com/account/access/639c3fbd40307fbbde954cae
 
+    email : code.2307sabia@gmail.com
+    password : wPp5wA95TjeTqt#
+
 ## Media Queries
 
 ## Practice
 
-## [Examine-1](https://bit.ly/3zhUpMt)
+## [Examine-1](https://bit.ly/3zhUpMt) 👍🏻
