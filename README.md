@@ -1,10 +1,6 @@
-# ---------- 30.03.23 ----------(13)
+# ---------- 01.04.23 ----------(14)
 
-## Checking homeworks 👍🏻
-
-## FlexBox practice 👍🏻
-
-## Grid 👍🏻
+## Checking homeworks
 
 ## Important Terminology 👍🏻
 
@@ -71,6 +67,10 @@
 
     email : code.2307sabia@gmail.com
     password : wPp5wA95TjeTqt#
+
+## JS Introduction
+
+## Coding JS
 
 ## Media Queries
 
