@@ -16,7 +16,7 @@ body {
 	background-color: var(--dark);
 	padding: 4px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 150px 150px 1fr auto;
 	grid-template-rows: 1fr 1fr 1fr;
 	gap: 4px;
 }
