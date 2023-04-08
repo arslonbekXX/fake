@@ -12,10 +12,23 @@
 
      ✅ minmax
      ✅ repeat
-                 🎁 auto-fill
-                 🎁 auto-fit
+                 🎁 auto-fill 👍🏻
+                 🎁 auto-fit 👍🏻
 
-## JS Introduction
+## Variables
+
+## Data types
+
+     🎉 primitive
+          ✅ string -> "pdp-g-10"
+          ✅ number -> 10
+          ✅ boolean -> true | false
+          ✅ null
+          ✅ undefined
+
+     🎉 non-primitive (Reference)
+          ✅ array -> []
+          ✅ object -> {}
 
 ## Coding JS
 
