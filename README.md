@@ -1,19 +1,6 @@
-# ---------- 08.04.23 ----------(16)
+# ---------- 09.04.23 ----------(17)
 
 ## Checking homeworks
-
-## Grid Auto 👍🏻
-
-     ✅ grid-auto-rows
-     ✅ grid-auto-columns
-     ✅ grid-auto-flow
-
-## Sizing Functions 👍🏻
-
-     ✅ minmax
-     ✅ repeat
-                 🎁 auto-fill 👍🏻
-                 🎁 auto-fit 👍🏻
 
 ## Variables
 
@@ -30,10 +17,23 @@
           ✅ array -> []
           ✅ object -> {}
 
-## Coding JS
+## Condition
+
+## Loops
+
+          ✅ for
+          ✅ while
+          ✅ do while
+
+## Functions
+
+          ✅ Function types
+               🎉 void function (not return)
+               🎉 non void function (with return)
+          ✅ Arguments
+          ✅ Parameters
+          ✅ Default value
+
+## Explain CodingJS
 
 ## Media Queries
-
-## Practice
-
-## [Examine-1](https://bit.ly/3zhUpMt) 👍🏻

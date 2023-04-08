@@ -1,3 +1,4 @@
+/*----------- 08.04.23(16)--------- */
 /** SWAP */
 // let a = 30;
 // let b = 40;
@@ -13,16 +14,18 @@
 
 /** FizzBuzz */
 
-let num = 15;
-let result = "";
+// let num = 15;
+// let result = "";
 
-if (num % 3 == 0) result += "Fizz";
-if (num % 5 == 0) result += "Buzz";
+// if (num % 3 == 0) result += "Fizz";
+// if (num % 5 == 0) result += "Buzz";
 
-console.log(result);
+// console.log(result);
 
 /**
  * num % 3 == 0 -> "Fizz"
  * num % 5 == 0 -> "Buzz"
  * num % 15 == 0 -> "FizzBuzz"
  */
+
+/*----------- 09.04.23(17)--------- */
