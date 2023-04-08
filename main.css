@@ -5,6 +5,7 @@
 body {
 	margin: 0;
 	height: 100vh;
+	overflow: scroll;
 }
 
 h1 {
@@ -12,17 +13,12 @@ h1 {
 }
 
 .boxes {
-	width: 800px;
-	height: 800px;
+	height: 300px;
 	display: grid;
-	grid-template: 150px 150px 150px / 150px 150px 150px 150px;
-	justify-content: center;
-	align-content: center;
-	gap: 0.5rem;
-	grid-template-areas:
-		"box-1 box-1 box-2 box-2"
-		"box-3 box-4 box-2 box-2"
-		"box-5 box-5 box-6 box-6";
+	grid-template-columns: repeat(auto-fit, [row-start] minmax(100px, 150px) [row-end]);
+	grid-auto-rows: 100px;
+	grid-auto-columns: 100px;
+	/* grid-auto-flow: column; */
 }
 
 .box {

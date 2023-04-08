@@ -2,12 +2,20 @@
 
 ## Checking homeworks
 
-## Sizing Functions
+## Grid Auto 👍🏻
 
-            ✅ minmax
-            ✅ repeat
+     ✅ grid-auto-rows
+     ✅ grid-auto-columns
+     ✅ grid-auto-flow
+
+## Sizing Functions 👍🏻
+
+     ✅ minmax
+     ✅ repeat
                  🎁 auto-fill
                  🎁 auto-fit
+
+## Naming Grid Lines
 
 ## Links
 
