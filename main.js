@@ -29,3 +29,55 @@
  */
 
 /*----------- 09.04.23(17)--------- */
+
+// let firstName = "arslonbek";
+// let lastName = "boburbekov";
+
+/***
+ * Cases
+ *
+ * camelCase -> firstName
+ * pascalCase -> FirstName
+ * snakeCase -> my_first_name
+ * kebabCase -> my-first-name
+ *
+ */
+
+/** For IN */
+// const nums = [20, 30, 40, 50, 20];
+
+// for (let i in nums) {
+// 	const num = nums[i];
+// 	console.log("num = ", num);
+// }
+
+// /** For OF */
+// const nums = [20, 30, 40, 50, 20];
+
+// for (let num of nums) {
+// 	console.log("num = ", num);
+// }
+
+/**
+ * Coding Challenge #1 :
+ * Mark and Kent are trying to compare their BMI (Body Mass Index),
+ * which is calculated using the formula:
+ * BMI = mass / height ** 2
+ *
+ *
+ * Task-1 : Store Mark's and Kent's mass and height in variables
+ * Task-2 : Calculate both their BMIs using the formula (you can even implement both versions)
+ * Task-3 : Create a Boolean variable 'markResult' containing information about whether Mark has a higher BMI than Kent
+ *
+ *
+ */
+let markWeight = 70;
+let markHeight = 175
+// let markBMI =
+
+let kentWeight = 100;
+let kentHeight = 180
+// let kentBMI =
+
+
+let markResult =

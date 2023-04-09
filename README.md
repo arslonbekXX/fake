@@ -1,10 +1,10 @@
 # ---------- 09.04.23 ----------(17)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
-## Variables
+## Variables 👍🏻
 
-## Data types
+## Data types 👍🏻
 
      🎉 primitive
           ✅ string -> "pdp-g-10"
@@ -16,14 +16,17 @@
      🎉 non-primitive (Reference)
           ✅ array -> []
           ✅ object -> {}
+          ✅ function -> function (){}
 
-## Condition
+## Condition 👍🏻
 
-## Loops
+## Loops 👍🏻
 
-          ✅ for
+          ✅ for i
           ✅ while
           ✅ do while
+          ✅ for of
+          ✅ for in
 
 ## Functions
 
