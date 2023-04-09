@@ -30,12 +30,12 @@
 
 ## Functions
 
-          ✅ Function types
-               🎉 void function (not return)
-               🎉 non void function (with return)
-          ✅ Arguments
-          ✅ Parameters
-          ✅ Default value
+          ✅ Function types 👍🏻
+               🎉 void function (not return) 👍🏻
+               🎉 non void function (with return) 👍🏻
+          ✅ Arguments 👍🏻
+          ✅ Parameters 👍🏻
+          ✅ Default value 👍🏻
 
 ## Explain CodingJS
 

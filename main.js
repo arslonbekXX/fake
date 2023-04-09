@@ -71,13 +71,46 @@
  *
  *
  */
-let markWeight = 70;
-let markHeight = 175
-// let markBMI =
+// let markWeight = 70;
+// let markHeight = 175;
+// let markBMI = markWeight / markHeight ** 2;
 
-let kentWeight = 100;
-let kentHeight = 180
-// let kentBMI =
+// let kentWeight = 100;
+// let kentHeight = 180;
+// let kentBMI = kentWeight / kentHeight ** 2;
 
+// let result = "";
+// if (kentBMI > markBMI) {
+// 	result = "Kent katta";
+// } else if (kentBMI < markBMI) {
+// 	result = "Mark katta";
+// } else {
+// 	result = "Teng";
+// }
 
-let markResult =
+// console.log(result);
+
+/** Function  */
+
+// function hi(name) {
+// 	console.log("hello " + name);
+// }
+// hi("Arslonbek");
+// hi("Baxtiyor");
+// hi("Arslonbek");
+// hi("Kent");
+// hi("Mark");
+// hi("Ben");
+
+// function myFn(first, second) {
+// 	return first + second;
+// }
+
+// const result = myFn(30, 40);
+
+// console.log(result);
+
+// function suvOlibKeling() {}
+
+// const suv = suvOlibKeling();
+// console.log(suv);
