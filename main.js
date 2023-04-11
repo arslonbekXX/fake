@@ -116,3 +116,83 @@
 // console.log(suv);
 
 /*----------- 11.04.23(18)--------- */
+
+/* String */
+//             012345678901234567
+// let message = "Arslonbek good boy";
+
+// const char = message[2];
+
+// console.log(message);
+// console.log(char);
+
+/* Operations */
+
+// let a = "11";
+// let b = 1;
+// let d = 20;
+// let c = a + d + b; // 11201
+// console.log(c);
+
+/* NaN -> Not a Number */
+
+/* Logical Operations */
+// && -> and
+// || -> or
+// ! -> not
+
+// let isExist = false;
+
+// const a = (true && true && (false || (true && false))) || true;
+
+/* Truthy and Falsy values */
+
+/**
+ *
+ * false
+ * undefined
+ * null
+ * ""
+ * 0
+ *
+ */
+
+// const isExist = "";
+
+// if (isExist) {
+// 	console.log("Oq yol 🎉");
+// } else {
+// 	console.log("Shtraf 💰");
+// }
+//       012345678
+// let a = "bobbek";
+
+// let b = "";
+
+// let firstName = a[a.length - 3] + a[a.length - 2] + a[a.length - 1] + a;
+
+// console.log(firstName);
+
+// const a = "false" || "arslonbek";
+
+// console.log(a);
+
+function everyNth(str, n) {
+	let result = "";
+	for (let i = 0; i < str.length; i += n) {
+		result += str[i];
+	}
+
+	return result;
+}
+
+/**
+ * everyNth('Miracle', 2) === "Mrce"
+ *
+ * result = "";
+ * i = 0 -> result = "M", i = 2
+ * i = 2 -> result = "Mr", i = 4
+ * i = 4 -> result = "Mrc", i = 6
+ * i = 6 -> result = "Mrce", i = 8
+ *
+ */

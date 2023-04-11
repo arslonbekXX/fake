@@ -2,6 +2,14 @@
 
 ## Checking homeworks 👍🏻
 
+## String 👍🏻
+
+## Operations 👍🏻
+
+## Logical Operations 👍🏻
+
+## Truthy and Falsy values 👍🏻
+
 ## CodingJS
 
 ## Media Queries
