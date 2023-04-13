@@ -196,3 +196,13 @@ function everyNth(str, n) {
  * i = 6 -> result = "Mrce", i = 8
  *
  */
+/**
+ * everyNth('arslonbek', 4) === "Mrce"
+ *
+ * result = "";
+ * i = 0 -> result = "M", i = 2
+ * i = 2 -> result = "Mr", i = 4
+ * i = 4 -> result = "Mrc", i = 6
+ * i = 6 -> result = "Mrce", i = 8
+ *
+ */

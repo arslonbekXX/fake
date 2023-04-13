@@ -9,15 +9,3 @@ body {
 h1 {
 	font-size: 30px;
 }
-
-@media (min-width: 778px) {
-	body {
-		background-color: red;
-	}
-}
-
-@media (min-width: 576px) and (max-width: 800px) {
-	body {
-		background-color: #4e13d8;
-	}
-}
