@@ -6,6 +6,13 @@ body {
 	background-color: #efed40;
 }
 
+* {
+	font-family: Roboto;
+}
+
 h1 {
-	font-size: 30px;
+	font-size: 80px;
+	font-weight: 300;
+	font-family: Roboto;
+	font-style: italic;
 }
