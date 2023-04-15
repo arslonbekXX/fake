@@ -177,14 +177,14 @@
 
 // console.log(a);
 
-function everyNth(str, n) {
-	let result = "";
-	for (let i = 0; i < str.length; i += n) {
-		result += str[i];
-	}
+// function everyNth(str, n) {
+// 	let result = "";
+// 	for (let i = 0; i < str.length; i += n) {
+// 		result += str[i];
+// 	}
 
-	return result;
-}
+// 	return result;
+// }
 
 /**
  * everyNth('Miracle', 2) === "Mrce"
@@ -206,3 +206,5 @@ function everyNth(str, n) {
  * i = 6 -> result = "Mrce", i = 8
  *
  */
+
+/*----------- 15.04.23(20)--------- */
