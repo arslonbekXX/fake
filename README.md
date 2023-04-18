@@ -24,40 +24,40 @@
                🎁 WOFF      -> "Web Open Font Format"  [more compressed]
                🎁 WOFF 2.0  -> "Web Open Font Format"  [more compressed]
 
-       ✅ Using Font and Compress Font
+       ✅ Using Font and Compress Font 👍🏻
                🎁 download font :  https://fonts.google.com/specimen/Dancing+Script
                🎁 using WOFF format with css code
 
 ## Formatting
 
-           ✅ Vertical Spacing
+           ✅ Vertical Spacing 👍🏻
                🎁 line-height
 
            ✅ Horizontal Spacing
-               🎁 letter-spacing
-               🎁 word-spacing
-               🎁 white-spacing
+               🎁 letter-spacing 👍🏻
+               🎁 word-spacing 👍🏻
+               🎁 white-spacing 👍🏻
 
            ✅ Formatting Text
-               🎁 text-align
-               🎁 text-indent
-               🎁 text-decoration
-               🎁 text-transform
-               🎁 text-overflow
-               🎁 line-clamp
-               🎁 column-count
-               🎁 column-gap
-               🎁 column-rule
-               🎁 direction
+               🎁 text-align 👍🏻
+               🎁 text-indent 👍🏻
+               🎁 text-decoration 👍🏻
+               🎁 text-transform 👍🏻
+               🎁 text-overflow 👍🏻
+               🎁 line-clamp 👍🏻
+               🎁 column-count 👍🏻
+               🎁 column-gap 👍🏻
+               🎁 column-rule 👍🏻
+               🎁 direction 👍🏻
 
 ## Images
 
-       ✅ Background Images
-           🔷 background-image
-           🔷 background-repeat
-           🔷 background-position
-           🔷 background-size
-           🔷 background-attachment
+       ✅ Background Images 👍🏻
+           🔷 background-image 👍🏻
+           🔷 background-repeat 👍🏻
+           🔷 background-position 👍🏻
+           🔷 background-size 👍🏻
+           🔷 background-attachment 👍🏻
                🎁 local
                🎁 fixed
                🎁 scroll
