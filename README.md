@@ -11,9 +11,9 @@
          ✅ slice 👍🏻
          ✅ charAt 👍🏻
          ✅ trim 👍🏻
-         ✅ endsWith
-         ✅ startsWith
-         ✅ indexOf
+         ✅ endsWith 💰
+         ✅ startsWith 💰
+         ✅ indexOf 💰
          ✅ includes 💰
          ✅ concat 💰
          ✅ split 💰
