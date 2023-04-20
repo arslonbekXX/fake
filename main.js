@@ -207,4 +207,116 @@
  *
  */
 
-/*----------- 15.04.23(20)--------- */
+/*----------- 20.04.23(22)--------- */
+
+/* Method vs Function */
+// function repeat() {}
+// let str = "pdp best";
+
+// repeat(); // function
+// str.repeat(); // method
+
+/* String methods  */
+
+/* Substring method */
+// //           012345678901234567
+// const str = "arslonbek good boy";
+// const result = substring(10, 14);
+// console.log(result);
+
+function substring(startIdx, lastIdx = str.length) {
+	let temp = "";
+
+	for (let i = startIdx; i < lastIdx; i++) {
+		temp += str[i];
+	}
+
+	return temp;
+}
+
+/* Repeat method */
+
+// //           012345678901234567890
+// const str = "winner group marjonas";
+// const sub = substring(7, 12);
+// const result = repeat(5);
+// console.log(result);
+
+function repeat(times) {
+	let temp = "";
+	for (let i = 0; i < times; i++) {
+		temp += sub;
+	}
+	return temp;
+}
+
+/* Slice method */
+//           012345678901234567890
+// const str = "front-end pdp-g-10";
+// const sub = substring(0, 9); //  012345678901234567
+// const repeatedSub = repeat(2); // front-endfront-end
+// const result = slice(-8, -5);
+// console.log(result);
+
+// function slice(startIdx, lastIdx) {
+// 	let temp = "";
+
+// 	if (startIdx < 0) {
+// 		lastIdx = lastIdx || 0;
+// 		for (let i = startIdx; i < lastIdx; i++) {
+// 			temp += repeatedSub[str.length + i];
+// 		}
+// 	} else {
+// 		lastIdx = lastIdx || str.length;
+// 		for (let i = startIdx; i < lastIdx; i++) {
+// 			temp += repeatedSub[i];
+// 		}
+// 	}
+
+// 	return temp;
+// }
+
+/* charAt method */
+//           01234567890123
+// const str = "I am developer";
+// console.log(str[15] || "");
+// console.log(str.charAt(15));
+
+/* trim method */
+
+// const str = "  ars@domain.com    ";
+
+// console.log(str);
+// console.log(trim());
+
+// function trim() {
+// 	let temp = "";
+// 	let startIdx = 0;
+// 	let lastIdx = 0;
+
+// 	for (let i = 0; i < str.length; i++) {
+// 		if (str[i] !== " ") {
+// 			startIdx = i;
+// 			break;
+// 		}
+// 	}
+
+// 	for (let i = str.length - 1; i > 0; i--) {
+// 		if (str[i] !== " ") {
+// 			lastIdx = i;
+// 			break;
+// 		}
+// 	}
+
+// 	for (let i = startIdx; i <= lastIdx; i++) {
+// 		temp += str[i];
+// 	}
+
+// 	return temp;
+// }
+
+/* startWith */
+
+function checkPhone(prefix, phone) {}
+
+checkPhone("+998", "+998998961348"); // true

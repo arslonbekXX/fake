@@ -4,6 +4,22 @@
 
 ## CodingJS
 
+## String Methods
+
+         ✅ substring 👍🏻
+         ✅ repeat 👍🏻
+         ✅ slice 👍🏻
+         ✅ charAt 👍🏻
+         ✅ trim 👍🏻
+         ✅ endsWith
+         ✅ startsWith
+         ✅ indexOf
+         ✅ includes 💰
+         ✅ concat 💰
+         ✅ split 💰
+         ✅ replace 💰
+         ✅ replaceAll 💰
+
 ## Transformations
 
          ✅ rotate
