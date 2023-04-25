@@ -1,24 +1,8 @@
-# ---------- 20.04.23 ----------(22)
+# ---------- 25.04.23 ----------(23)
 
-## Checking homeworks (Marjonas)
+## Checking homeworks
 
 ## CodingJS
-
-## String Methods
-
-         ✅ substring 👍🏻
-         ✅ repeat 👍🏻
-         ✅ slice 👍🏻
-         ✅ charAt 👍🏻
-         ✅ trim 👍🏻
-         ✅ endsWith 💰
-         ✅ startsWith 💰
-         ✅ indexOf 💰
-         ✅ includes 💰
-         ✅ concat 💰
-         ✅ split 💰
-         ✅ replace 💰
-         ✅ replaceAll 💰
 
 ## Transformations
 
