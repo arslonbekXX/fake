@@ -1,34 +1,37 @@
+.element {
+	height: 250px;
+	width: 250px;
+	margin: 0 auto;
+	background-color: red;
+	animation-name: app;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+}
+
+@keyframes app {
+	0% {
+		transform: scale(0.5);
+		background-color: red;
+		border-radius: 100%;
+	}
+	50% {
+		background-color: green;
+	}
+	100% {
+		transform: scale(1.5);
+		background-color: yellow;
+	}
+}
+
+body,
+html {
+	height: 100%;
+}
+
 body {
+	display: flex;
 	align-items: center;
-	background: radial-gradient(farthest-side at bottom left, rgba(255, 0, 255, 0.5), #246756), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.5), #246756 400px);
-	height: 100vh;
-	overflow: scroll;
+	justify-content: center;
 }
-
-.container {
-	height: 200vh;
-}
-
-.box {
-	background-color: #fff;
-	box-shadow: 2px 2px 10px #246756;
-	width: 800px;
-	height: 800px;
-	text-align: justify;
-	column-rule: 2px solid;
-	background-image: url("../images/image.jpg"), url("../images/image.jpg");
-	background-size: contain;
-	overflow: scroll;
-	background-attachment: local;
-}
-/*
-@media (max-width: 1200px) {
-	.box {
-		column-count: 2;
-	}
-}
-@media (max-width: 900px) {
-	.box {
-		column-count: 1;
-	}
-} */

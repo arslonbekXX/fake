@@ -317,8 +317,8 @@ function repeat(times) {
 
 /* startWith */
 
-function checkPhone(prefix, phone) {
-	return prefix === phone.substring(0, prefix.length);
-}
+// function checkPhone(prefix, phone) {
+// 	return prefix === phone.substring(0, prefix.length);
+// }
 
-console.log(checkPhone("+997", "+997998961348")); // true
+// console.log(checkPhone("+997", "+997998961348")); // true

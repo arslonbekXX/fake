@@ -1,22 +1,22 @@
 # ---------- 25.04.23 ----------(23)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
-## CodingJS
+## CodingJS 👍🏻
 
 ## Transformations
 
          ✅ rotate
-         ✅ scale
-         ✅ translate
-         ✅ skew
+         ✅ scale 👍🏻
+         ✅ translate 👍🏻
+         ✅ skew 👍🏻
 
-## Transitions
+## Transitions 👍🏻
 
-         ✅ transition-delay
-         ✅ transition-duration
-         ✅ transition-timing-function
-         ✅ transition-property
+         ✅ transition-delay 👍🏻
+         ✅ transition-duration 👍🏻
+         ✅ transition-timing-function 👍🏻
+         ✅ transition-property 👍🏻
          ✅ Universal property (Transition)
          🔗  https://css-tricks.com/almanac/properties/t/transition/
          🔗  https://cubic-bezier.com/
