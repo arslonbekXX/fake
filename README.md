@@ -1,15 +1,15 @@
 # ---------- 02.05.23 ----------(25)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
 ## Animations
 
-         ✅ animation-name
+         ✅ animation-name 👍🏻
            🔷 @keyframe animation-name
-         ✅ animation-duration
-         ✅ animation-timing-function
-         ✅ animation-delay
-         ✅ animation-direction
+         ✅ animation-duration 👍🏻
+         ✅ animation-timing-function 👍🏻
+         ✅ animation-delay 👍🏻
+         ✅ animation-direction 
            🔷 normal
            🔷 reverse
            🔷 alternate
@@ -73,6 +73,6 @@
 
 ## Nesting
 
-## Parent Selector
+## Parent Selector (&)
 
 ## [Examine Results](https://bit.ly/41TaHIv)
