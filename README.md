@@ -2,14 +2,14 @@
 
 ## Checking homeworks 👍🏻
 
-## Animations
+## Animations 👍🏻
 
          ✅ animation-name 👍🏻
            🔷 @keyframe animation-name
          ✅ animation-duration 👍🏻
          ✅ animation-timing-function 👍🏻
          ✅ animation-delay 👍🏻
-         ✅ animation-direction 
+         ✅ animation-direction  👍🏻
            🔷 normal
            🔷 reverse
            🔷 alternate
@@ -17,7 +17,7 @@
          ✅ animation-iteration-count
          ✅ https://animate.style
 
-## Deploying
+## Deploying 👍🏻
 
          ✅ Deploy manually
 
