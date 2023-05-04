@@ -1,25 +1,6 @@
-# ---------- 02.05.23 ----------(25)
+# ---------- 04.05.23 ----------(26)
 
-## Checking homeworks 👍🏻
-
-## Animations 👍🏻
-
-         ✅ animation-name 👍🏻
-           🔷 @keyframe animation-name
-         ✅ animation-duration 👍🏻
-         ✅ animation-timing-function 👍🏻
-         ✅ animation-delay 👍🏻
-         ✅ animation-direction  👍🏻
-           🔷 normal
-           🔷 reverse
-           🔷 alternate
-           🔷 reverse-alternate
-         ✅ animation-iteration-count
-         ✅ https://animate.style
-
-## Deploying 👍🏻
-
-         ✅ Deploy manually
+## Checking homeworks
 
 ## Explain SASS Course Plan
 
