@@ -1,8 +1,8 @@
 # ---------- 04.05.23 ----------(26)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
-## Explain SASS Course Plan
+## Explain SASS Course Plan 👍🏻
 
       ✅ SASS BASICS
            🎁 SASS Compiler
@@ -21,38 +21,34 @@
            🎁 If Directive
            🎁 Others...
 
-## What Is SASS
+## What Is SASS 👍🏻
 
        ✅ SASS - Syntactically Awesome Style Sheets
        ✅ SASS - Extension to CSS and CSS pre-processor
        ✅ SASS - More powerful and flexible code
 
-## SASS In 100 Seconds
+## SASS In 100 Seconds 👍🏻
 
        ✅ https://www.youtube.com/watch?v=akDIJa0AP5c
 
-## How Does SASS Work
+## How Does SASS Work 👍🏻
 
 ## Setup
 
-      ✅ Install VS-Code
-      ✅ Install Node JS
-      ✅ Install node-sass with npm
-      ✅ Install vs code extensions
-           🎁 "Bracket Pair Colorizer"
+      ✅ Install VS-Code 👍🏻
+      ✅ Install Node JS 👍🏻
+      ✅ Install node-sass with npm 👍🏻
+      ✅ Install vs code extensions 👍🏻
+           🎁 "Bracket Pair Colorizer" 🎁
            🎁 "SCSS IntelliSense"
 
-## What is "NodeJS" and "npm"
+## What is "NodeJS" and "npm" 👍🏻
 
 ## Create first Web app with SASS
 
-      ✅ using "npm init -y" command
-      ✅ using global node_modules
-      ✅ compile with node-sass
+## SASS variables 👍🏻
 
-## SASS variables
-
-## Nesting
+## Nesting 👍🏻
 
 ## Parent Selector (&)
 

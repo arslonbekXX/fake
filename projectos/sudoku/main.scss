@@ -1,0 +1,41 @@
+$bg: #efed40;
+$primary: #161c24;
+$cellBg: #94a3b7;
+$cellActiveBg: #6e7c8c;
+$boardBorder: #00000040;
+$light: #fff;
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.sudoku {
+	width: 600px;
+	height: 600px;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	background-color: $primary;
+	padding: 4px;
+	gap: 4px;
+}
+
+.board {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	background: $boardBorder;
+	gap: 2px;
+}
+
+.cell {
+	display: grid;
+	place-items: center;
+	background-color: $light;
+	&:hover {
+		background-color: $cellActiveBg;
+	}
+}
+
+@debug 20;

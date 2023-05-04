@@ -1,0 +1,34 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.sudoku {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  background-color: #161c24;
+  padding: 4px;
+  gap: 4px;
+}
+
+.board {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  background: rgba(0, 0, 0, 0.2509803922);
+  gap: 2px;
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+}
+.cell:hover {
+  background-color: #6e7c8c;
+}
+
+/*# sourceMappingURL=main.css.map */

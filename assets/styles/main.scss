@@ -1,0 +1,17 @@
+body {
+	height: 100vh;
+	background-color: #efed40;
+	display: grid;
+	place-items: center;
+	margin: 0;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+.container {
+	.app {
+		background-color: red;
+	}
+}
