@@ -1,17 +1,36 @@
+@import "./utils";
+
 body {
 	height: 100vh;
-	background-color: #efed40;
-	display: grid;
-	place-items: center;
+
 	margin: 0;
+	@extend %center;
 }
 
-h1 {
-	font-size: 80px;
-}
+.btn {
+	padding-inline: 7px;
+	border: 1px solid;
+	box-sizing: border-box;
+	color: rgba(0, 0, 0, 0.88);
+	font-size: 12px;
+	line-height: 20px;
+	list-style: none;
+	font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+	display: inline-block;
+	height: auto;
+	white-space: nowrap;
+	background: rgba(0, 0, 0, 0.02);
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	opacity: 1;
+	transition: all 0.2s;
+	text-align: center;
 
-.container {
-	.app {
-		background-color: red;
-	}
+	@include tag("warning", #faad14, #fffbe6, #ffe58f);
+
+	// &--warning {
+	// 	color: #faad14;
+	// 	background: #fffbe6;
+	// 	border-color: #ffe58f;
+	// }
 }

@@ -1,0 +1,7 @@
+@mixin tag($className, $color, $background, $borderColor) {
+	&--#{$className} {
+		color: $color;
+		background: $background;
+		border-color: $borderColor;
+	}
+}
