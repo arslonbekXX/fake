@@ -1,15 +1,35 @@
-# ---------- 06.05.23 ----------(27)
+# ---------- 09.05.23 ----------(28)
 
-# Parent Selector (&) 👍🏻
+# Placeholder Selectors
 
-# SVG change color 👍🏻
+     ✅ %placeholder
+     ✅ @extends %placeholder
 
-# Partials 👍🏻
+## Variables
 
-# Practice 👍🏻
+     ✅ Scoping
+     ✅ Shadowing
 
-# Mixins 👍🏻
+## Interpolation
 
-# Links
+## At-Rules
 
-     ✅ https://gist.github.com/AdamMarsden/7b85e8d5bdb5bef969a0
+     ✅ @use
+     ✅ @forward
+     ✅ @import
+     ✅ @mixin && @include
+     ✅ @function
+     ✅ @extend
+     ✅ @at-root
+     ✅ @error
+     ✅ @warn
+     ✅ @debug
+
+## Flow Control
+
+     ✅ @if and @else
+     ✅ @each
+     ✅ @for
+     ✅ @while
+
+# Practice
