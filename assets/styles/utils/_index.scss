@@ -1,2 +1,4 @@
-@import "./placeholders";
-@import "./mixins";
+@forward "./colors";
+@forward "./mixins";
+@forward "./functions";
+@forward "./mixins2";

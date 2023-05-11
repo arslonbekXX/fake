@@ -1,18 +1,39 @@
 # ---------- 11.05.23 ----------(29)
 
-## Operations
+# @use
 
-     ✅ math.div()
+     ✅ Modules 👍🏻
+     ✅ Loading Members 👍🏻
+     ✅ Private Members 👍🏻
+     ✅ Aliases 👍🏻
+     ✅ @use vs @import 👍🏻
+
+# @forward 👍🏻
+
+## Operations 👍🏻
+
+     ✅ math.div() 👍🏻
      ✅ *
      ✅ +
      ✅ -
 
-## Variables
+## Variables 👍🏻
 
-     ✅ !default
-     ✅ !global
+     ✅ !default 👍🏻
+     ✅ !global 👍🏻
 
-## Default values - (!default)
+## At-Rules
+
+     ✅ @use 👍🏻
+     ✅ @forward 👍🏻
+     ✅ @import 👍🏻
+     ✅ @mixin && @include 👍🏻
+     ✅ @function
+     ✅ @extend 👍🏻
+     ✅ @at-root
+     ✅ @error 👍🏻
+     ✅ @warn 👍🏻
+     ✅ @debug 👍🏻
 
 ## Flow Control
 
@@ -20,26 +41,3 @@
      ✅ @each
      ✅ @for
      ✅ @while
-
-## At-Rules
-
-     ✅ @use
-     ✅ @forward
-     ✅ @import 👍🏻
-     ✅ @mixin && @include 👍🏻
-     ✅ @function
-     ✅ @extend
-     ✅ @at-root
-     ✅ @error
-     ✅ @warn
-     ✅ @debug
-
-# @use
-
-     ✅ Modules
-     ✅ Loading Members
-     ✅ Private Members
-     ✅ Aliases
-     ✅ @use vs @import
-
-# @forward

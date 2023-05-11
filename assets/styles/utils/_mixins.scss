@@ -1,7 +1,9 @@
-@mixin tag($className, $color, $background, $borderColor) {
-	&--#{$className} {
-		color: $color;
-		background: $background;
-		border-color: $borderColor;
-	}
+$primary: #efed40 !default;
+$secondary: #8640ef !default;
+
+@mixin center() {
+	display: grid;
+	place-items: center;
+	background-color: $primary;
+	color: $secondary;
 }
