@@ -1,10 +1,10 @@
 # ---------- 13.05.23 ----------(30)
 
-## CurrentColor
+## CurrentColor 👍🏻
 
-## SASS using images
+## SASS using images 👍🏻
 
-## Dark and light modes
+## Dark and light modes 👍🏻
 
 ## At-Rules
 
@@ -21,9 +21,9 @@
 
 ## Flow Control
 
-     ✅ @if and @else
-     ✅ @each
-     ✅ @for
+     ✅ @if and @else 👍🏻
+     ✅ @each 👍🏻
+     ✅ @for 👍🏻
      ✅ @while
 
 ## Mixin @content

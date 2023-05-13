@@ -1,0 +1,13 @@
+@use "../utils/themes";
+
+:root {
+	@include themes.light;
+}
+
+body.dark-mode {
+	@include themes.dark;
+}
+
+body {
+	background-color: var(--bgColor);
+}
