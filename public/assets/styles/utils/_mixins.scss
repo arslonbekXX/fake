@@ -1,9 +1,22 @@
-$primary: #efed40 !default;
-$secondary: #8640ef !default;
+$breakpoints: (
+	"sm": 567px,
+	"md": 767px,
+	"lg": 992px,
+	"xl": 1200px,
+) !default;
 
-@mixin center() {
-	display: grid;
-	place-items: center;
-	background-color: $primary;
-	color: $secondary;
+@mixin media($breakpoint) {
+	// If the key exists in the map
+	@if map-has-key($breakpoints, $breakpoint) {
+		// Prints a media query based on the value
+		@media (max-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+
+	// If the key doesn't exist in the map
+	@else {
+		@error "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+							+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
 }

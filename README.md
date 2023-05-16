@@ -4,6 +4,8 @@
 
 ## SASS media queries
 
+# ----------JAVASCRIPT----------
+
 ## Values and Variables
 
 ## Variable name conventions

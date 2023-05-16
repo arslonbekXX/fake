@@ -1,67 +1,31 @@
-// $sizes: 40px, 50px, 80px;
+@use "./utils";
 
-// @each $size in $sizes {
-// 	.icon-#{$size} {
-// 		font-size: $size;
-// 		height: $size;
-// 		width: $size;
-// 	}
-// }
+.boxes {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(6, 1fr);
 
-// $icons: (
-// 	"eye": "👁️",
-// 	"start": "🏁",
-// 	"stop": "🛑",
-// );
-
-// @each $name, $icon in $icons {
-// 	.icon-#{$name}:before {
-// 		display: inline-block;
-// 		font-family: "Icon Font";
-// 		content: $icon;
-// 	}
-// }
-
-// $base-color: #036;
-
-// @for $i from 1 through 3 {
-// 	.m-#{$i} {
-// 		margin: 0.5rem * $i;
-// 	}
-
-// 	.mt-#{$i} {
-// 		margin-top: 0.5rem * $i;
-// 	}
-// 	.mb-#{$i} {
-// 		margin-bottom: 0.5rem * $i;
-// 	}
-// }
-
-$displays: flex, grid, inline, inline-block, block;
-
-@each $display in $displays {
-	.d-#{$display} {
-		display: $display;
+	@include utils.media("lg") {
+		grid-template-columns: repeat(3, 1fr);
 	}
+	// @include utils.responsive(768px) {
+	// 	grid-template-columns: repeat(2, 1fr);
+	// }
+	// @include utils.responsive(576px) {
+	// 	grid-template-columns: repeat(1, 1fr);
+	// }
 }
 
-// .m-1 {
-// 	margin: 10px; // 1*10 + 0
-// }
-// .m-2 {
-// 	margin: 30px; // 2*10 + 10 = 30
-// }
-// .m-3 {
-// 	margin: 60px; // 3 * 10 + 30 = 60
-// }
-// .m-4 {
-// 	margin: 100px; // 4 * 10 + 60 = 100
-// }
-
-$margin: 0;
-@for $i from 1 through 10 {
-	.m-#{$i} {
-		$margin: $margin + (10px * $i) !global;
-		margin: $margin;
+.box {
+	// width: 200px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s linear all;
+	border: 2px dashed;
+	@media (max-width: 920px) {
+		background-color: black;
+		color: #fff;
 	}
 }
