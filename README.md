@@ -1,29 +1,29 @@
 # ---------- 16.05.23 ----------(31)
 
-## Mixin @content
+## Mixin @content 👍🏻
 
-## SASS media queries
+## SASS media queries 👍🏻
 
 # ----------JAVASCRIPT----------
 
-## Values and Variables
+## Values and Variables 👍🏻
 
-## Variable name conventions
+## Variable name conventions 👍🏻
 
 ## Data Types
 
 ## Primitive Data types
 
-     ✅ Number
-     ✅ String
-     ✅ Boolean
+     ✅ Number // 20
+     ✅ String // 'arslonbek'
+     ✅ Boolean // true or false
      ✅ Undefined
      ✅ Null
 
 ## let && const && var
 
      ✅ Hoisting
-     ✅ Temporal dead zone(let, const)
+     ✅ Temporal dead zone (let, const)
      ✅ Scoping
           🔷 Global scope -> full file
           🔷 Function scope -> function (){}
