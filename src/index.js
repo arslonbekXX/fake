@@ -77,14 +77,62 @@
 // 	console.log(a);
 // }
 
-var a = 40;
-function app() {
-	if (a) console.log(a);
+// var a = 40;
+// function app() {
+// 	if (a) console.log(a);
 
-	if (a > 10) console.log(`${a} bigger than 10`);
+// 	if (a > 10) console.log(`${a} bigger than 10`);
 
-	var a = 50;
-	console.log(a);
-}
+// 	var a = 50;
+// 	console.log(a);
+// }
 
 // app()
+
+/**
+ * ------STACK MEMORY------
+ *-----------------------------
+ *    address    |      value
+ *-----------------------------
+ *      001      |     HM_0001
+ *-----------------------------
+ *      002      |     HM_0001
+ *-----------------------------
+ *
+ */
+
+/**
+ * ------HEAP MEMORY------
+ *-----------------------------
+ *    address    |      value
+ *-----------------------------
+ *     0001      |     [10,2,3]
+ *
+ */
+
+// const nums = [1, 2, 3]; // SM_nums_001 = HM_0001
+// const nums1 = nums; // SM_nums1_002 = HM_0001
+// nums1[0] = 10; // HM_0001[0] = 10
+
+// console.log(nums); // HM_0001
+// console.log(nums1); // HM_0001
+
+// let a = 20;
+
+// console.log((a += 1));
+// console.log(a);
+
+// console.log(20 === 20);
+// console.log(20 === "20");
+// console.log(20 === Number("20"));
+
+const age = 21;
+console.log("My age : " + age);
+console.log(`
+
+My age : ${age}
+
+
+ arslonbek alimbaev
+
+`);

@@ -1,8 +1,8 @@
 # ---------- 18.05.23 ----------(32)
 
-## Data Types
+## Data Types 👍🏻
 
-## Primitive Data types
+## Primitive Data types 👍🏻
 
      ✅ Number // 20
      ✅ String // 'arslonbek'
@@ -10,7 +10,7 @@
      ✅ Undefined
      ✅ Null
 
-## let && const && var
+## let && const && var 👍🏻
 
      ✅ Hoisting
      ✅ Temporal dead zone (let, const)
@@ -19,13 +19,13 @@
           🔷 Function scope -> function (){}
           🔷 Block scope -> {} || for(){}
 
-## Basic operators
+## Basic operators 👍🏻
 
      ✅ Math operators (%,+,-,++,--,*,/,*=,+=)
      ✅ Assignment operators (=)
      ✅ Comparison operators (>, <, >=, <=, ==, ===, !=, !==)
 
-## Coding Challenge
+## Coding Challenge 👍🏻
 
      ✅ CALC BMI(Body Mass Index) BMI = weight / height ** 2
           🔷 Save values variables: height and wight
@@ -35,13 +35,13 @@
                🎁 TEST DATA 2: Mark: weight: 95kg, height: 1.88m || Kent : weight: 85kg, height: 1.76m
      ✅ swap algorithm
 
-## Strings and Template Literals
+## Strings and Template Literals 👍🏻
 
-## Coding JS Warmup-1
+## Coding JS Warmup-1 👍🏻
 
 ## If && Else Statements
 
-## Statement vs Expression
+## Statement vs Expression 🏠
 
       ✅ https://www.joshwcomeau.com/javascript/statements-vs-expressions/
       ✅ https://www.youtube.com/watch?v=WVyCrI1cHi8&t=1s
