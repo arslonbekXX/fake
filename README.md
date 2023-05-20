@@ -47,22 +47,24 @@
       ✅ https://www.youtube.com/watch?v=WVyCrI1cHi8&t=1s
       ✅ https://www.youtube.com/watch?v=tpIctyqH29Q&list=PLH2l6uzC4UEW0s7-KewFLBC1D0l6XRfye
 
-## Coding Challenge(2)
+## Coding Challenge(2) 👍🏻
 
-## Type Conversion and Coercion
+## Type Conversion and Coercion 👍🏻
 
-## Truthy and Falsy values
+## Truthy and Falsy values 👍🏻
 
-## Equality Operators == vs ===
+## Equality Operators == vs === 👍🏻
 
-## Boolean Logic
+## Boolean Logic 👍🏻
 
       ✅ &&
       ✅ ||
       ✅ !
 
-## Logic Operators
+## Logic Operators 👍🏻
 
 ## Coding Challenge(3)
 
 ## Coding JS Warmup-1
+
+## https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript

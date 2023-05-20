@@ -151,5 +151,60 @@
 // const result = if(20 > 10) return true; else return false;
 // const result1 = app
 
+/*Type Conversion */
+// const a = function () {};
 
+// const b = "20.54";
+// const c = Number(b);
+// console.log(c);
 
+// const x = Boolean(a);
+// console.log(x);
+
+/*Type Coercion */
+
+// const x = 10;
+// const y = "10";
+
+// const z = x + +y;
+// console.log(z);
+// console.log(x);
+// console.log(Number(y));
+// console.log(+y);
+// console.log(x === Number(y));
+// console.log(x == y);
+
+// const a = 11;
+// const b = "1";
+
+// const c = a - b; // 10
+// console.log(c);
+
+/**
+ * Falsy
+ *
+ * Number : 0
+ * String : ""
+ * undefined
+ * null
+ * false
+ * NaN
+ */
+
+// const a = function () {};
+// const a = 20;
+
+// if (function () {}) {
+// 	console.log("katta");
+// } else {
+// 	console.log("kichik");
+// }
+
+// const a = "z";
+// const b = "w";
+
+// console.log(a > b);
+
+// const result = ("arslonbek" && false) || "boburbek";
+const result = (0 && 1) || "boburbek";
+// console.log(result);
