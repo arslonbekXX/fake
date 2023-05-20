@@ -126,13 +126,30 @@
 // console.log(20 === "20");
 // console.log(20 === Number("20"));
 
-const age = 21;
-console.log("My age : " + age);
-console.log(`
+// const age = 21;
+// console.log("My age : " + age);
+// console.log(`
 
-My age : ${age}
+// My age : ${age}
+
+//  arslonbek alimbaev
+
+// `);
+
+// function app() {
+// 	console.log("hello world");
+// }
+
+// function app() {
+// 	if (20 > 10) {
+// 		return "togri";
+// 	} else {
+// 		return "notogri";
+// 	}
+// }
+
+// const result = if(20 > 10) return true; else return false;
+// const result1 = app
 
 
- arslonbek alimbaev
 
-`);
