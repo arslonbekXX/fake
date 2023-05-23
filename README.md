@@ -1,70 +1,48 @@
-# ---------- 20.05.23 ----------(33)
+# ---------- 23.05.23 ----------(34)
 
-## Data Types 👍🏻
+## Functions
 
-## Primitive Data types 👍🏻
+      ✅ What is Function 👍🏻
+      ✅ Function types 👍🏻
+      ✅ calling && running && invoking function 👍🏻
+      ✅ Function Declarations vs Expressions 👍🏻
+      ✅ Function calling other functions
+      ✅ Function Review
 
-     ✅ Number // 20
-     ✅ String // 'arslonbek'
-     ✅ Boolean // true or false
-     ✅ Undefined
-     ✅ Null
+## Coding Challenge(4)
 
-## let && const && var 👍🏻
+## String Methods
 
-     ✅ Hoisting
-     ✅ Temporal dead zone (let, const)
-     ✅ Scoping
-          🔷 Global scope -> full file
-          🔷 Function scope -> function (){}
-          🔷 Block scope -> {} || for(){}
+      ✅ charAt
+      ✅ concat
+      ✅ endsWith
+      ✅ startsWith
+      ✅ includes
+      ✅ indexOf
+      ✅ lastIndexOf
+      ✅ search
+      ✅ replace --
+      ✅ split
+      ✅ slice --
+      ✅ substring
+      ✅ trim
+      ✅ toLowerCase
+      ✅ toUpperCase
 
-## Basic operators 👍🏻
+## Introduction to Arrays
 
-     ✅ Math operators (%,+,-,++,--,*,/,*=,+=)
-     ✅ Assignment operators (=)
-     ✅ Comparison operators (>, <, >=, <=, ==, ===, !=, !==)
+## Basic Array Operations(Methods)
 
-## Coding Challenge 👍🏻
+      ✅ Method vs Function
+      ✅ Crete simple forEach and map method
+      ✅ Crete simple forEach and map method
+      ✅ What is callback function
 
-     ✅ CALC BMI(Body Mass Index) BMI = weight / height ** 2
-          🔷 Save values variables: height and wight
-          🔷 calc BMI with formula
-          🔷 create markResult variables
-               🎁 TEST DATA 1: Mark: weight: 78kg, height: 1.69m || Kent : weight: 92kg, height: 1.95m
-               🎁 TEST DATA 2: Mark: weight: 95kg, height: 1.88m || Kent : weight: 85kg, height: 1.76m
-     ✅ swap algorithm
+## Add and Remove Elements
 
-## Strings and Template Literals 👍🏻
-
-## Coding JS Warmup-1 👍🏻
-
-## If && Else Statements 👍🏻
-
-## Statement vs Expression 🏠 👍🏻
-
-      ✅ https://www.joshwcomeau.com/javascript/statements-vs-expressions/
-      ✅ https://www.youtube.com/watch?v=WVyCrI1cHi8&t=1s
-      ✅ https://www.youtube.com/watch?v=tpIctyqH29Q&list=PLH2l6uzC4UEW0s7-KewFLBC1D0l6XRfye
-
-## Coding Challenge(2) 👍🏻
-
-## Type Conversion and Coercion 👍🏻
-
-## Truthy and Falsy values 👍🏻
-
-## Equality Operators == vs === 👍🏻
-
-## Boolean Logic 👍🏻
-
-      ✅ &&
-      ✅ ||
-      ✅ !
-
-## Logic Operators 👍🏻
-
-## Coding Challenge(3)
-
-## Coding JS Warmup-1
+      ✅ push
+      ✅ unshift
+      ✅ pop
+      ✅ shift
 
 ## https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript

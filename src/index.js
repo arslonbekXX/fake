@@ -206,5 +206,69 @@
 // console.log(a > b);
 
 // const result = ("arslonbek" && false) || "boburbek";
-const result = (0 && 1) || "boburbek";
+// const result = (0 && 1) || "boburbek";
 // console.log(result);
+
+// const name1 = "arslonbek";
+// const last1 = "Tajebayev";
+// console.log(`hello ${name1} ${last1}`);
+
+// const name2 = "erkin";
+// const last2 = "Boltaboyev";
+// console.log(`hello ${name2} ${last2}`);
+
+// const name3 = "sardorbek";
+// const last3 = "Torayev";
+// console.log(`hello ${name3} ${last3}`);
+
+// function hi(name, last) {
+// 	console.log(`hello ${name} ${last}`);
+// }
+
+// const result = hi("arslonbek", "Tajebayev");
+// console.log(result);
+// hi("erkin", "Boltaboyev");
+// hi("sardorbek", "Torayev");
+
+/* VOID FUNCTION */
+// function summa(a, b) {
+// 	const total = a + b;
+// 	console.log(total); // 30
+
+// 	return;
+// }
+
+// const result = summa(10, 20);
+// console.log(result); // 30
+/* NOVOID FUNCTION */
+
+// function functionName(parametrs) {...body...}
+
+// hi("arslonbek");
+// function hi(a, b, c) {
+// 	console.log(`hi ${a}`);
+// }
+// hi("arslonbek");
+
+// run("Sardorbek");
+// const run = function (name) {
+// 	console.log(`${name} is running...`);
+// };
+
+// run("Boburbek");
+
+function move(name, fn) {
+	console.log("[MOVE]: starting move");
+	fn(name);
+}
+
+function jump(name) {
+	console.log(`[JUMP]: ${name} is jumping...`);
+}
+
+function run(name) {
+	console.log(`[RUN]: ${name} is running...`);
+}
+
+move("Kent", jump);
+move("Mark", run);
