@@ -257,18 +257,75 @@
 
 // run("Boburbek");
 
-function move(name, fn) {
-	console.log("[MOVE]: starting move");
-	fn(name);
+// function move(name, fn) {
+// 	console.log("[MOVE]: starting move");
+// 	fn(name);
+// }
+
+// function jump(name) {
+// 	console.log(`[JUMP]: ${name} is jumping...`);
+// }
+
+// function run(name) {
+// 	console.log(`[RUN]: ${name} is running...`);
+// }
+
+// move("Kent", jump);
+// move("Mark", run);
+
+// let str = "hello world";
+// function subString(startIdx, lastIdx = str.length) {
+// 	let result = "";
+
+// 	for (let i = startIdx; i < lastIdx; i++) {
+// 		result += str[i];
+// 	}
+
+// 	return result;
+// }
+
+// const first = subString(0);
+// console.log(first);
+
+function find(str) {
+	let max = 0;
+
+	for (let i = 0; i < str.length; i++) {
+		const char = str[i]; // b
+		let counter = 1; // 1
+		for (let j = i + 1; j < str.length; j++) {
+			if (char === str[j]) counter++; // b
+		}
+		if (counter > max) max = counter; // 4  -> max = 5
+	}
+
+	return max;
 }
 
-function jump(name) {
-	console.log(`[JUMP]: ${name} is jumping...`);
+function find2(str) {
+	let max = "";
+
+	for (let i = 0; i < str.length; i++) {
+		const char = str[i]; // b
+		let counter = str[i]; // 1
+		for (let j = i + 1; j < str.length; j++) {
+			if (char === str[j]) counter+= str[j]; /
+		}
+		if (counter.length > max)
+			max = counter
+	}
+
+	return max[0];
 }
 
-function run(name) {
-	console.log(`[RUN]: ${name} is running...`);
+const result = find2("abcaabbcaabc"); // 5
+
+console.log(result);
+
+
+function search(str) {
+ 
+
 }
 
-move("Kent", jump);
-move("Mark", run);
+search("abcaabbcaabc") // "abc"
