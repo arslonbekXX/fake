@@ -304,18 +304,20 @@ function find(str) {
 
 function find2(str) {
 	let max = "";
+	let result = ""
 
 	for (let i = 0; i < str.length; i++) {
 		const char = str[i]; // b
-		let counter = str[i]; // 1
+		let counter = 1; // 1
 		for (let j = i + 1; j < str.length; j++) {
-			if (char === str[j]) counter+= str[j]; /
+			if (char === str[j]) counter++; /
 		}
-		if (counter.length > max)
+		if (counter > max)
 			max = counter
+			result = char
 	}
 
-	return max[0];
+	return result;
 }
 
 const result = find2("abcaabbcaabc"); // 5
@@ -324,7 +326,7 @@ console.log(result);
 
 
 function search(str) {
- 
+
 
 }
 
