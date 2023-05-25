@@ -287,22 +287,22 @@
 // const first = subString(0);
 // console.log(first);
 
+// function find(str) {
+// 	let max = 0;
+
+// 	for (let i = 0; i < str.length; i++) {
+// 		const char = str[i]; // b
+// 		let counter = 1; // 1
+// 		for (let j = i + 1; j < str.length; j++) {
+// 			if (char === str[j]) counter++; // b
+// 		}
+// 		if (counter > max) max = counter; // 4  -> max = 5
+// 	}
+
+// 	return max;
+// }
+
 function find(str) {
-	let max = 0;
-
-	for (let i = 0; i < str.length; i++) {
-		const char = str[i]; // b
-		let counter = 1; // 1
-		for (let j = i + 1; j < str.length; j++) {
-			if (char === str[j]) counter++; // b
-		}
-		if (counter > max) max = counter; // 4  -> max = 5
-	}
-
-	return max;
-}
-
-function find2(str) {
 	let max = "";
 	let result = "";
 
@@ -321,12 +321,55 @@ function find2(str) {
 	return result;
 }
 
-const result = find2("abcaabbcaabc"); // 5
+// const result = find2("abcaabbcaabc"); // 5
 
-console.log(result);
+// console.log(result);
 
-// function search(str) {
-// 	let count = 0;
+// function search(str = "") {
+// 	let result = "";
+// 	while (true) {
+// 		const maxChar = find2(str);
+// 		result += maxChar;
+// 		if (maxChar !== "") {
+// 			const regex = new RegExp(maxChar, "gi");
+// 			str = str.replace(regex, "");
+// 			if (str.length === 0) break;
+// 		}
+// 	}
+// 	console.log("result =", result);
 // }
 
-// search("abcaabbcaabc"); // "abc"
+function clear(str, removeChar) {
+	let result = "";
+	for (let char of str) {
+		if (char !== removeChar) result += char;
+	}
+
+	return result;
+}
+
+function search(str) {
+	let result = "";
+	while (true) {
+		const maxChar = find(str);
+		result += maxChar;
+		str = clear(str, maxChar);
+		if (str.length === 0) break;
+	}
+	console.log("result =", result);
+}
+
+search("abcaabbcaabc"); // "abc"
+
+/***
+	* search1("abcaabbcaabc") => "abc"
+	* ------------
+	* str = "abcaabbcaabc", result = ""
+	* ---------------
+	* maxChar = "a", result = "a", str = "bcbbcbc"
+	* ---------------
+	* maxChar = "b", result = "ab", str = "ccc"
+	* ---------------
+	* maxChar = "c", result = "abc", str = ""
+	*
+ */
