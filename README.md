@@ -1,33 +1,25 @@
-# ---------- 25.05.23 ----------(35)
-
-## Functions
-
-      ✅ What is Function 👍🏻
-      ✅ Function types 👍🏻
-      ✅ calling && running && invoking function 👍🏻
-      ✅ Function Declarations vs Expressions 👍🏻
-      ✅ Function calling other functions
-      ✅ Function Review
+# ---------- 30.05.23 ----------(37)
 
 ## Coding Challenge(4)
 
 ## String Methods
 
-      ✅ charAt
-      ✅ concat
-      ✅ endsWith
-      ✅ startsWith
-      ✅ includes
-      ✅ indexOf
-      ✅ lastIndexOf
-      ✅ search
-      ✅ replace --
-      ✅ split
-      ✅ slice --
-      ✅ substring
-      ✅ trim
-      ✅ toLowerCase
-      ✅ toUpperCase
+      ✅ charAt 👍🏻
+      ✅ concat 👍🏻
+      ✅ endsWith 👍🏻
+      ✅ startsWith 👍🏻
+      ✅ includes 👍🏻
+      ✅ indexOf 👍🏻
+      ✅ lastIndexOf 👍🏻
+      ✅ search 👍🏻
+      ✅ replace 👍🏻
+      ✅ match 👍🏻
+      ✅ split 👍🏻
+      ✅ slice 👍🏻
+      ✅ substring 👍🏻
+      ✅ trim 👍🏻
+      ✅ toLowerCase 👍🏻
+      ✅ toUpperCase 👍🏻
 
 ## Introduction to Arrays
 
@@ -46,3 +38,5 @@
       ✅ shift
 
 ## https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript
+
+## http://csbin.io/closures
