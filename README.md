@@ -1,31 +1,12 @@
-# ---------- 30.05.23 ----------(37)
-
-## Coding Challenge(4)
-
-## String Methods
-
-      ✅ charAt 👍🏻
-      ✅ concat 👍🏻
-      ✅ endsWith 👍🏻
-      ✅ startsWith 👍🏻
-      ✅ includes 👍🏻
-      ✅ indexOf 👍🏻
-      ✅ lastIndexOf 👍🏻
-      ✅ search 👍🏻
-      ✅ replace 👍🏻
-      ✅ match 👍🏻
-      ✅ split 👍🏻
-      ✅ slice 👍🏻
-      ✅ substring 👍🏻
-      ✅ trim 👍🏻
-      ✅ toLowerCase 👍🏻
-      ✅ toUpperCase 👍🏻
+# ---------- 01.06.23 ----------(38)
 
 ## Introduction to Arrays
 
 ## Basic Array Operations(Methods)
 
-      ✅ Method vs Function
+      ✅ Method vs Function 👍🏻
+      ✅ Callback function 👍🏻
+      ✅ Higher order function (HOF) 👍🏻
       ✅ Crete simple forEach and map method
       ✅ Crete simple forEach and map method
       ✅ What is callback function
@@ -35,8 +16,14 @@
       ✅ push
       ✅ unshift
       ✅ pop
-      ✅ shift
+      ✅ pop
 
-## https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript
+#[Examine-3](https://bit.ly/42lQeLI)
 
-## http://csbin.io/closures
+# Homeworks
+
+      ✅ map
+      ✅ filter
+      ✅ reduce
+      ✅ find
+      ✅ findIndex
