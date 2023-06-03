@@ -1,4 +1,4 @@
-# ---------- 01.06.23 ----------(38)
+# ---------- 03.06.23 ----------(39)
 
 ## Introduction to Arrays
 
@@ -7,23 +7,15 @@
       ✅ Method vs Function 👍🏻
       ✅ Callback function 👍🏻
       ✅ Higher order function (HOF) 👍🏻
-      ✅ Crete simple forEach and map method
-      ✅ Crete simple forEach and map method
-      ✅ What is callback function
+      ✅ Crete simple forEach and map method 👍🏻
+      ✅ Crete simple forEach and map method 👍🏻
+      ✅ What is callback function 👍🏻
 
-## Add and Remove Elements
+# Add and Remove Elements
 
       ✅ push
       ✅ unshift
       ✅ pop
-      ✅ pop
-
-#[Examine-3](https://bit.ly/42lQeLI)
-
-# Homeworks
-
-      ✅ map
-      ✅ filter
-      ✅ reduce
-      ✅ find
-      ✅ findIndex
+      ✅ shift
+      ✅ forEach 👍🏻
+      ✅ map 👍🏻

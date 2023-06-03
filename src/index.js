@@ -105,17 +105,134 @@
 // 	qalaysan(name);
 // }
 
-const items = ["Arslonbek", "Boburbek", "Jamshidbek", "Maftunxon", "Mariyaxon"];
+// const items = ["Arslonbek", "Maftunxon", "Boburbek", "Jamshidbek", "Mariyaxon"];
 
-function girlHi(name) {
-	console.log(`🙋‍♀️: ${name}`);
-}
+// function girlHi(name, idx) {
+// 	console.log(`[🙋‍♀️][${idx}]: ${name}`); // [🙋‍♀️][1]: Maftunxon, [🙋‍♀️][4]: Mariyaxon
+// }
 
-function boyHi(name) {
-	console.log(`🙋🏻‍♂️: ${name}`);
-}
+// function boyHi(name, idx) {
+// 	console.log(`[🙋🏻‍♂️][${idx}]: ${name}`);
+// }
+// function personHi(name, idx) {
+// 	console.log(`[🙋🏻‍♂️🙋‍♀️][${idx}]: ${name}`);
+// }
 
-items.forEach(function (item, idx) {
-	if (item.endsWith("bek")) boyHi(item);
-	if (item.endsWith("xon")) girlHi(item);
-});
+// for (let idx = 0; idx < items.length; idx++) {
+// 	const item = items[idx];
+// 	if (item.endsWith("bek")) boyHi(item, idx);
+// 	else girlHi(item, idx);
+// }
+
+// items.forEach(personHi);
+
+// function summa(a) {
+// 	return function (b) {
+// 		return function (c) {
+// 			return a + b + c;
+// 		};
+// 	};
+// }
+
+// const result = summa(10)(20)(30);
+
+// console.log(60);
+
+/* ARRAY MAP Method */
+
+// function multiplyByThree(num, idx) {
+// 	if (idx % 2 === 1) return 0;
+// 	return num * 3;
+// }
+
+// function map(cb, array = []) {
+// 	const result = []; // []
+
+// 	for (let i = 0; i < array.length; i++) {
+// 		result[i] = cb(array[i], i);
+// 	}
+
+// 	return result;
+// }
+
+// const nums = [1, 2, 3, 4, 5];
+// const native_nums = nums.map(multiplyByThree);
+// const custom_nums = map(multiplyByThree, nums);
+
+// console.log(nums);
+// console.log(native_nums);
+// console.log(custom_nums);
+
+// const names = ["arslonbek", "boburbek"];
+
+// const items = ["<li>arslonbek</li>", "<li>boburbek</li>"];
+
+// const _items = names.map(function (name) {
+// 	return `<li>${name}</li>`;
+// });
+
+/* ARRAY PUSH METHOD */
+/* ARRAY POP METHOD */
+/* ARRAY SHIFT METHOD */
+// const nums = [1, 2, 3];
+// console.log(nums);
+// const result = nums.push(nums.shift());
+// console.log(nums);
+// console.log(result);
+/* ARRAY UNSHIFT METHOD */
+
+/**
+ * HEAP Memory
+ * --------------
+ * 0001 = [1,4,3]
+ *
+ *
+ */
+
+// const x = [1, 2, 3]; // SM_x_001 = HM_0001
+// const y = x; // SM_y_002 = HM_0001
+
+// y[1] = 4; // HM_0001[1] = 4
+
+// console.log(x); // [1,4,3]
+// console.log(y); // [1,4,3]
+
+// function map(array = []) {
+// 	// SM_array_003 = HM_0001
+// }
+
+// map(x); // map(HM_0001)
+
+// const groups = ["pdp-g-10", "pdp-f-20", "pdp-g-11", "pdp-b-10"];
+// const result = [];
+
+// for (let i = 0; i < groups.length; i++) {
+// 	const group = groups[i];
+// 	if (group.startsWith("pdp-g")) result.push(group);
+// }
+
+/* FOR OF */
+// for (let group of groups) {
+// 	if (group.startsWith("pdp-g")) result.push(group);
+// }
+
+/* FOR IN */
+// for (let idx in groups) {
+// 	console.log(idx);
+// 	console.log(groups[+idx]);
+// 	// if (group.startsWith("pdp-g")) result.push(group);
+// }
+
+// console.log(result);
+
+/* FILTER vs MAP  */
+// const magicWord = "pdp-g";
+// const groups = ["pdp-g-10", "pdp-f-20", "pdp-g-11", "pdp-b-10"];
+// const result = groups.filter(function (group) {
+// 	return group.startsWith(magicWord);
+// });
+
+// console.log(result);
+
+const nums = new Array(6).fill(0) // [0, 0, 0, 0, 0, 0]
+console.log(nums);
