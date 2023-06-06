@@ -268,10 +268,17 @@
 
 const names = ["arslonbek", "boburbek", "jamshidbek", "maftuna"];
 
-const result = names.reduce(function (acc, cur = "") {
+function myFn(acc, cur = "", idx, list) {
 	const icon = cur.endsWith("bek") ? "👦🏻" : "👧🏻";
 	const name = cur[0].toUpperCase() + cur.substring(1);
-	return acc + `[${icon}][${name}]-`;
-}, ""); // "[👦🏻][Arslonbek]-[👦🏻][Boburbek]-[👦🏻][Jamshidbek]-[👧🏻][Maftuna]"
+
+	acc += `[${icon}][${name}]${idx === list.length - 1 ? "" : "-"}`;
+
+	return acc;
+}
+
+const result = names.reduce(myFn, "");
 
 console.log(result);
+
+// "[👦🏻][Arslonbek]-[👦🏻][Boburbek]-[👦🏻][Jamshidbek]-[👧🏻][Maftuna]"
