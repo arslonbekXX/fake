@@ -234,5 +234,44 @@
 
 // console.log(result);
 
-const nums = new Array(6).fill(0) // [0, 0, 0, 0, 0, 0]
-console.log(nums);
+// const nums = [1, 2, 3, 4, 5, 6];
+
+// function test(acc, cur) {
+// 	return acc + cur;
+// }
+
+// const summa = nums.reduce(test, 0);
+
+// function reduce(fn, initialValue) {
+// 	let acc = initialValue || nums[0];
+
+// 	for (let i = initialValue ? 0 : 1; i < nums.length; i++) {
+// 		acc = fn(acc, nums[i]);
+// 	}
+
+// 	return acc;
+// }
+
+// console.log("summa = ", summa);
+
+/* Array find method */
+
+// const nums = [21, 50, 60];
+
+// const num = nums.find(function (num) {
+// 	return num % 10 === 0;
+// });
+
+// const numIdx = nums.findIndex(function (num) {
+// 	return num % 10 === 0;
+// });
+
+const names = ["arslonbek", "boburbek", "jamshidbek", "maftuna"];
+
+const result = names.reduce(function (acc, cur = "") {
+	const icon = cur.endsWith("bek") ? "👦🏻" : "👧🏻";
+	const name = cur[0].toUpperCase() + cur.substring(1);
+	return acc + `[${icon}][${name}]-`;
+}, ""); // "[👦🏻][Arslonbek]-[👦🏻][Boburbek]-[👦🏻][Jamshidbek]-[👧🏻][Maftuna]"
+
+console.log(result);

@@ -1,4 +1,4 @@
-# ---------- 03.06.23 ----------(39)
+# ---------- 06.06.23 ----------(40)
 
 ## Introduction to Arrays
 
@@ -13,9 +13,13 @@
 
 # Add and Remove Elements
 
-      ✅ push
-      ✅ unshift
-      ✅ pop
-      ✅ shift
+      ✅ push 👍🏻
+      ✅ unshift 👍🏻
+      ✅ pop 👍🏻
+      ✅ shift 👍🏻
       ✅ forEach 👍🏻
       ✅ map 👍🏻
+      ✅ filter 👍🏻
+      ✅ reduce 👍🏻
+      ✅ find
+      ✅ findIndex
