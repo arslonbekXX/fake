@@ -266,19 +266,79 @@
 // 	return num % 10 === 0;
 // });
 
-const names = ["arslonbek", "boburbek", "jamshidbek", "maftuna"];
+// const names = ["arslonbek", "boburbek", "jamshidbek", "maftuna"];
 
-function myFn(acc, cur = "", idx, list) {
-	const icon = cur.endsWith("bek") ? "👦🏻" : "👧🏻";
-	const name = cur[0].toUpperCase() + cur.substring(1);
+// function myFn(acc, cur = "", idx, list) {
+// 	const icon = cur.endsWith("bek") ? "👦🏻" : "👧🏻";
+// 	const name = cur[0].toUpperCase() + cur.substring(1);
 
-	acc += `[${icon}][${name}]${idx === list.length - 1 ? "" : "-"}`;
+// 	acc += `[${icon}][${name}]${idx === list.length - 1 ? "" : "-"}`;
 
-	return acc;
+// 	return acc;
+// }
+
+// const result = names.reduce(myFn, "");
+
+// console.log(result);
+
+// "[👦🏻][Arslonbek]-[👦🏻][Boburbek]-[👦🏻][Jamshidbek]-[👧🏻][Maftuna]"
+
+function summaX(x) {
+	if (x === 1) return 1;
+
+	return x + summaX(x - 1);
 }
 
-const result = names.reduce(myFn, "");
+const result = summaX(10); // 55
+
+/**
+ * i = 1; x = 10;  -> 10 + summaX(9)
+ * i = 2; x = 9;  -> 9 + summaX(8)
+ * i = 3; x = 8;  -> 8 + summaX(7)
+ * i = 4; x = 7;  -> 7 + summaX(6)
+ * i = 5; x = 6;  -> 6 + summaX(5)
+ * i = 6; x = 5;  -> 5 + summaX(4)
+ * i = 7; x = 4;  -> 4 + summaX(3)
+ * i = 8; x = 3;  -> 3 + summaX(2)
+ * i = 9; x = 2;  -> 2 + summaX(1)
+ * i = 10; x = 1;  -> 1
+ *
+ *
+ *
+ *
+ */
 
 console.log(result);
 
-// "[👦🏻][Arslonbek]-[👦🏻][Boburbek]-[👦🏻][Jamshidbek]-[👧🏻][Maftuna]"
+function squareUp(n) {
+	const result = [];
+
+	for (let i = 1; i <= n; i++) {
+		for (let j = n; j >= 1; j--) {
+			result.push(j <= i ? j : 0);
+		}
+	}
+
+	return result;
+}
+
+
+/**
+ * squareUp(3) → [0,0,1,0,2,1,3,2,1]
+ *
+ *
+ * i = 1;
+ *    j = 3; result = [0,]
+ *    j = 2; result = [0,0]
+ *    j = 1; result = [0,0,1]
+ * i = 2
+ *    j = 3; result = [0,0,1,0]
+ *    j = 2; result = [0,0,1,0,2]
+ *    j = 1; result = [0,0,1,0,2,1]
+ *
+ * i = 3
+ *    j = 3; result = [0,0,1,0,2,1,3]
+ *    j = 2; result = [0,0,1,0,2,1,3,2]
+ *    j = 1; result = [0,0,1,0,2,1,3,2,1]
+ *
+ */
