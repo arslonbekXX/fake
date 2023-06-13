@@ -4,42 +4,45 @@
 
 ## DOM -> (Document Object Model)
 
-       ✅ What is this DOM ?
+       ✅ What is this DOM ? (Document Object Model) document
+       ✅ What is this BOM ? (Browser Object Model) setTimeout, setInterval ...
        ✅ Difference between DOM and HTML source code
        ✅ simple examples
 
 ## DOM TREE and Nodes
 
-       ✅ Most using nodes
+       ✅ Most using nodes 👍🏻
            🔷 Element node
            🔷 Text node
            🔷 Comment node
-       ✅ Node types
+       ✅ Node types 👍🏻
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 
-## Change HTML codes
+## Change HTML codes 👍🏻
 
-       ✅ Most using selectors
-           🔷 document.querySelector()
-           🔷 document.querySelectorAll()
-           🔷 document.getElementById()
-           🔷 document.getElementsByClassName()
-           🔷 document.getElementsByTagName()
-       ✅ Write Examples
+       ✅ Most using selectors 👍🏻
+           🔷 document.querySelector() 👍🏻
+           🔷 document.querySelectorAll() 👍🏻
+           🔷 document.getElementById() 👍🏻
+           🔷 document.getElementsByClassName() 👍🏻
+           🔷 document.getElementsByTagName() 👍🏻
+       ✅ Write Examples 👍🏻
 
-## Children Nodes
+## Children
 
-       ✅ Write Examples
+       ✅ Write Examples 👍🏻
+       ✅ childNodes -> any node 👍🏻
+       ✅ children -> element node 👍🏻
 
-## Sibling Nodes
+## Sibling Nodes 🌀
 
        ✅ Write Examples
 
 ## How To Make Changes to the DOM
 
        ✅ Creating New Nodes
-           🔷 createElement()
-           🔷 createTextNode()
+           🔷 createElement() 👍🏻
+           🔷 createTextNode() 👍🏻
            🔷 textContent()
            🔷 innerHTML()
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#security_considerations - (cross-site scripting (XSS) )

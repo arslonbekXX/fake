@@ -8,10 +8,12 @@ body {
 .container {
 	display: grid;
 	height: 100%;
+	max-height: 80vh;
 	padding: 10rem;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	box-sizing: border-box;
 	place-items: center;
+	overflow: scroll;
 }
 
 .hex {
@@ -39,12 +41,14 @@ body {
 	translate: -50% -50%;
 	color: #fff;
 }
-.btn {
+
+.btn-group {
 	position: absolute;
 	bottom: -1rem;
 	left: 50%;
 	translate: -50% -50%;
-
+}
+.btn {
 	display: inline-block;
 	font-weight: 400;
 	text-align: center;
