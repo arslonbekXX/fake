@@ -1,25 +1,72 @@
-# ---------- 08.06.23 ----------(41)
+# ---------- 13.06.23 ----------(43)
 
-## Introduction to Arrays
+## Checking homeworks
 
-## Basic Array Operations(Methods)
+## DOM -> (Document Object Model)
 
-      ✅ Method vs Function 👍🏻
-      ✅ Callback function 👍🏻
-      ✅ Higher order function (HOF) 👍🏻
-      ✅ Crete simple forEach and map method 👍🏻
-      ✅ Crete simple forEach and map method 👍🏻
-      ✅ What is callback function 👍🏻
+       ✅ What is this DOM ?
+       ✅ Difference between DOM and HTML source code
+       ✅ simple examples
 
-# Add and Remove Elements
+## DOM TREE and Nodes
 
-      ✅ push 👍🏻
-      ✅ unshift 👍🏻
-      ✅ pop 👍🏻
-      ✅ shift 👍🏻
-      ✅ forEach 👍🏻
-      ✅ map 👍🏻
-      ✅ filter 👍🏻
-      ✅ reduce 👍🏻
-      ✅ find
-      ✅ findIndex
+       ✅ Most using nodes
+           🔷 Element node
+           🔷 Text node
+           🔷 Comment node
+       ✅ Node types
+           🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
+
+## Change HTML codes
+
+       ✅ Most using selectors
+           🔷 document.querySelector()
+           🔷 document.querySelectorAll()
+           🔷 document.getElementById()
+           🔷 document.getElementsByClassName()
+           🔷 document.getElementsByTagName()
+       ✅ Write Examples
+
+## Children Nodes
+
+       ✅ Write Examples
+
+## Sibling Nodes
+
+       ✅ Write Examples
+
+## How To Make Changes to the DOM
+
+       ✅ Creating New Nodes
+           🔷 createElement()
+           🔷 createTextNode()
+           🔷 textContent()
+           🔷 innerHTML()
+           🔷 https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#security_considerations - (cross-site scripting (XSS) )
+           🔷 https://www.youtube.com/watch?v=EoaDgUgS6QA
+       ✅ Inserting Nodes into the DOM
+           🔷 appendChild()
+           🔷 insertBefore()
+           🔷 replaceChild()
+
+       ✅ Removing Nodes from the DOM
+           🔷 removeChild()
+           🔷 remove()
+       ✅ Removing Nodes from the DOM
+           🔷 removeChild()
+           🔷 remove()
+
+## How To Modify Attributes, Classes, and Styles in the DOM
+
+       ✅ Attributes functions
+           🔷 hasAttribute
+           🔷 getAttribute
+           🔷 setAttribute
+           🔷 removeAttribute
+       ✅ Modifying Classes
+           🔷 className
+           🔷 classList.add
+           🔷 classList.remove
+           🔷 classList.toggle
+           🔷 classList.replace
+           🔷 classList.remove

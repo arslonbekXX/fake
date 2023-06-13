@@ -283,13 +283,13 @@
 
 // "[👦🏻][Arslonbek]-[👦🏻][Boburbek]-[👦🏻][Jamshidbek]-[👧🏻][Maftuna]"
 
-function summaX(x) {
-	if (x === 1) return 1;
+// function summaX(x) {
+// 	if (x === 1) return 1;
 
-	return x + summaX(x - 1);
-}
+// 	return x + summaX(x - 1);
+// }
 
-const result = summaX(10); // 55
+// const result = summaX(10); // 55
 
 /**
  * i = 1; x = 10;  -> 10 + summaX(9)
@@ -308,20 +308,19 @@ const result = summaX(10); // 55
  *
  */
 
-console.log(result);
+// console.log(result);
 
-function squareUp(n) {
-	const result = [];
+// function squareUp(n) {
+// 	const result = [];
 
-	for (let i = 1; i <= n; i++) {
-		for (let j = n; j >= 1; j--) {
-			result.push(j <= i ? j : 0);
-		}
-	}
+// 	for (let i = 1; i <= n; i++) {
+// 		for (let j = n; j >= 1; j--) {
+// 			result.push(j <= i ? j : 0);
+// 		}
+// 	}
 
-	return result;
-}
-
+// 	return result;
+// }
 
 /**
  * squareUp(3) → [0,0,1,0,2,1,3,2,1]
