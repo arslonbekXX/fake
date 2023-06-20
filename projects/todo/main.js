@@ -1,14 +1,18 @@
 //  DOM VARIABLES
 const todoInput = document.getElementById("todo_name");
 const addBtn = document.getElementById("add_btn");
+const clearBtn = document.getElementById("clear_btn");
+const randomBtn = document.getElementById("random_btn");
 const todosWrapper = document.querySelector(".todos");
+const form = document.querySelector("form");
 // LOGICAL VARIABLES
 const todos = [];
 let mode = "ADD"; // ADD || EDIT
 let editingTodoIdx;
 
 // HANDLER FUNCTIONS
-function handleAdd() {
+function handleSubmit(e) {
+	e.preventDefault();
 	const todoName = todoInput.value;
 
 	if (!todoName.length) return alert("Please enter valid todo name");
@@ -45,7 +49,18 @@ function handleDelete(idx) {
 	renderTodos();
 }
 
-addBtn.addEventListener("click", handleAdd);
+function handleRandom() {
+	todos.sort(() => Math.random() - 0.5);
+	renderTodos();
+}
+function handleClear() {
+	todos.splice(0, todos.length);
+	renderTodos();
+}
+
+form.addEventListener("submit", handleSubmit);
+clearBtn.addEventListener("click", handleClear);
+randomBtn.addEventListener("click", handleRandom);
 // LOGICAL FUNCTIONS
 
 // UI FUNCTIONS
