@@ -12,11 +12,11 @@
 // 	console.log("item  = ", item);
 // });
 
-const heading = document.createElement("h1");
+// const heading = document.createElement("h1");
 
-heading.innerText = "Hello World"; //
+// heading.innerText = "Hello World"; //
 
-const textContent = heading.textContent;
+// const textContent = heading.textContent;
 
 // const textNode = document.createTextNode("Hello World");
 // heading.appendChild(textNode);
