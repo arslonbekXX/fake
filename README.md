@@ -1,32 +1,6 @@
-# ---------- 20.06.23 ----------(44)
+# ---------- 22.06.23 ----------(45)
 
 ## Checking homeworks
-
-## DOM -> (Document Object Model)
-
-       ✅ What is this DOM ? (Document Object Model) document
-       ✅ What is this BOM ? (Browser Object Model) setTimeout, setInterval ...
-       ✅ Difference between DOM and HTML source code
-       ✅ simple examples
-
-## DOM TREE and Nodes
-
-       ✅ Most using nodes 👍🏻
-           🔷 Element node
-           🔷 Text node
-           🔷 Comment node
-       ✅ Node types 👍🏻
-           🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
-
-## Change HTML codes 👍🏻
-
-       ✅ Most using selectors 👍🏻
-           🔷 document.querySelector() 👍🏻
-           🔷 document.querySelectorAll() 👍🏻
-           🔷 document.getElementById() 👍🏻
-           🔷 document.getElementsByClassName() 👍🏻
-           🔷 document.getElementsByTagName() 👍🏻
-       ✅ Write Examples 👍🏻
 
 ## Children
 
