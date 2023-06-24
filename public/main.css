@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+
+.boxes {
+	width: 100%;
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 200px;
+	gap: 1rem;
+	padding: 0 1rem;
+}
+
+.box {
+	user-select: none;
+
+	background-color: blue;
+	color: #fff;
+	cursor: pointer;
+	font-size: 40px;
+	display: grid;
+	place-items: center;
+	transition: 0.03s linear transform;
+}
+
+.box:active {
+	transform: scale(0.97);
+}

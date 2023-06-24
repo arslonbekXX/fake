@@ -1,37 +1,37 @@
-# ---------- 22.06.23 ----------(45)
+# ---------- 24.06.23 ----------(46)
 
-## Checking homeworks
+## Checking homeworks(Pig Game) 👍🏻
 
-## Children
+## Sibling Nodes 🌀 👍🏻
 
-       ✅ Write Examples 👍🏻
-       ✅ childNodes -> any node 👍🏻
-       ✅ children -> element node 👍🏻
+       ✅ nextElementSibling
+       ✅ nextSibling
+       ✅ previousElementSibling
+       ✅ previousSibling
 
-## Sibling Nodes 🌀
+## Optional chaning [?] 👍🏻
 
-       ✅ Write Examples
+## Nullish [??] 👍🏻
 
 ## How To Make Changes to the DOM
 
        ✅ Creating New Nodes
            🔷 createElement() 👍🏻
            🔷 createTextNode() 👍🏻
-           🔷 textContent()
-           🔷 innerHTML()
+           🔷 textContent() 👍🏻
+           🔷 innerHTML() 👍🏻
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#security_considerations - (cross-site scripting (XSS) )
            🔷 https://www.youtube.com/watch?v=EoaDgUgS6QA
        ✅ Inserting Nodes into the DOM
-           🔷 appendChild()
-           🔷 insertBefore()
+           🔷 appendChild() 👍🏻
+           🔷 insertBefore() 👍🏻
            🔷 replaceChild()
 
        ✅ Removing Nodes from the DOM
            🔷 removeChild()
            🔷 remove()
-       ✅ Removing Nodes from the DOM
-           🔷 removeChild()
-           🔷 remove()
+
+## InnerHTML vs createElement
 
 ## How To Modify Attributes, Classes, and Styles in the DOM
 
@@ -48,4 +48,29 @@
            🔷 classList.replace
            🔷 classList.remove
 
-## [HOMEWORK](https://react-hooks.netlify.app/isolated/final/04.extra-1.js)
+## Understanding Events in JavaScript
+
+       ✅ Inline Event Handler Attributes
+       ✅ Event Handler Properties
+       ✅ Event Listeners
+
+## Common Events
+
+       ✅ Mouse Events
+           🔷 click
+           🔷 dblclick
+           🔷 mouseenter
+           🔷 mouseleave
+           🔷 mousemove
+
+       ✅ Form Events
+           🔷 submit
+           🔷 focus
+           🔷 blur
+
+       ✅ Keyboard Events
+           🔷 keydown
+           🔷 keyup
+           🔷 keypress
+
+## [ALL EVENTS](https://developer.mozilla.org/en-US/docs/Web/API/Event)
