@@ -5,7 +5,7 @@ body {
 	margin: 0;
 }
 
-.boxes {
+.container {
 	width: 100%;
 	margin-top: 2rem;
 	display: grid;
@@ -18,7 +18,7 @@ body {
 .box {
 	user-select: none;
 
-	background-color: blue;
+	background-color: rgb(174, 0, 255);
 	color: #fff;
 	cursor: pointer;
 	font-size: 40px;
@@ -29,4 +29,34 @@ body {
 
 .box:active {
 	transform: scale(0.97);
+}
+
+/* attribute */
+/* .box[color="danger"] {
+	background-color: red;
+}
+.box[color="success"] {
+	background-color: rgb(21, 234, 24);
+}
+.box[color="dark"] {
+	background-color: black;
+}
+.box[color="light"] {
+	background-color: white;
+	color: #000;
+} */
+
+/* classes */
+.danger {
+	background-color: red;
+}
+.success {
+	background-color: rgb(21, 234, 24);
+}
+.dark {
+	background-color: black;
+}
+.light {
+	background-color: white;
+	color: #000;
 }

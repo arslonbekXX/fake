@@ -62,16 +62,74 @@
 // 	commentInput.value = "";
 // });
 
-const container = document.querySelector(".container");
+// const container = document.querySelector(".container");
 
-let counter = 0;
+// let counter = 0;
 
-function addFront() {
-	const element = container.children[0];
-	const newBox = document.createElement("div");
-	newBox.innerText = `New Box-${++counter}`;
-	newBox.className = "box";
-	container.replaceChild(newBox, element);
-}
+// function addFront() {
+// 	const element = container.children[0];
+// 	const newBox = document.createElement("div");
+// 	newBox.innerText = `New Box-${++counter}`;
+// 	newBox.className = "box";
+// 	container.replaceChild(newBox, element);
+// }
 
 // setInterval(addFront, 10000);
+
+const colors = ["light", "dark", "danger", "success"];
+const boxes = document.querySelectorAll(".box");
+
+const _colors = {
+	dark: "light",
+	light: "dark",
+	danger: "success",
+	success: "danger",
+};
+
+// const MAIN_KEY = "color"; // ...
+
+// boxes.forEach((box) => {
+// 	box.addEventListener("click", (e) => {
+// 		const color = box.getAttribute(MAIN_KEY);
+// 		const replaceColor = _colors[color];
+
+// 		if (!replaceColor) return box.remove();
+
+// 		box.setAttribute(MAIN_KEY, replaceColor);
+// 	});
+// });
+
+// boxes.forEach((box) => {
+// 	box.addEventListener("click", (e) => {
+// 		const color = box.classList[1];
+// 		const replaceColor = _colors[color];
+
+// 		box.classList.replace(color, replaceColor);
+
+// 		console.log("color = ", color);
+// 		console.log("replaceColor = ", replaceColor);
+// 	});
+// });
+
+// const setList = new Set();
+// setList.add(20);
+// setList.add(10);
+// setList.add(30);
+// console.log(setList.values());
+
+// console.log(Array.from(setList));
+
+boxes.forEach((box, idx) => {
+	box.addEventListener("click", () => {
+		console.log(`clicked box-${idx + 1}`);
+	});
+	box.addEventListener("click", () => {
+		console.log(`clicked box-${idx + 1}`);
+	});
+	box.addEventListener("click", () => {
+		console.log(`clicked box-${idx + 1}`);
+	});
+	box.addEventListener("click", () => {
+		console.log(`clicked box-${idx + 1}`);
+	});
+});
