@@ -16,15 +16,25 @@ body {
 }
 
 .box {
+	width: 500px;
+	height: 500px;
 	user-select: none;
-
-	background-color: rgb(174, 0, 255);
+	background-color: rgb(255, 0, 187);
 	color: #fff;
 	cursor: pointer;
-	font-size: 40px;
+	font-size: 30px;
 	display: grid;
 	place-items: center;
 	transition: 0.03s linear transform;
+}
+
+.inner-box {
+	display: grid;
+	padding: 0.5rem 1rem;
+	width: max-content;
+	height: max-content;
+	background-color: #000;
+	color: #fff;
 }
 
 .box:active {
