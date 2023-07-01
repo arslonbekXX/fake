@@ -1,21 +1,6 @@
-# ---------- 25.06.23 ----------(47)
+# ---------- 25.06.23 ----------(48)
 
-## Checking homeworks(Pig Game) 👍🏻
-
-## How To Modify Attributes, Classes, and Styles in the DOM
-
-       ✅ Attributes functions
-           🔷 setAttribute 👍🏻
-           🔷 hasAttribute 👍🏻
-           🔷 getAttribute 👍🏻
-           🔷 removeAttribute 👍🏻
-
-       ✅ Modifying Classes
-           🔷 className 👍🏻
-           🔷 classList.add 👍🏻
-           🔷 classList.remove 👍🏻
-           🔷 classList.toggle 👍🏻
-           🔷 classList.replace 👍🏻
+## Checking homeworks(Quiz App) 👍🏻
 
 ## Understanding Events in JavaScript
 
@@ -41,5 +26,7 @@
            🔷 keydown
            🔷 keyup
            🔷 keypress
+
+## Pig Game
 
 ## [ALL EVENTS](https://developer.mozilla.org/en-US/docs/Web/API/Event)
