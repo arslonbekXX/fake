@@ -13,3 +13,5 @@
      ✅ 9-dice === 1 ? true boganda current-score ni 0 qilish (muslima) 👍🏻
      ✅ 0-player almashganda active-player class ni almashtirish (asilbek) 👍🏻
      ✅ 1-checkWinner logikasini qilish (ziyovuddin) 👍🏻
+
+## [Homework](https://www.quizbeez.com/brain-games/memory)

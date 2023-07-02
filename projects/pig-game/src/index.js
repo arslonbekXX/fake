@@ -65,6 +65,17 @@ function addListeners() {
 	btnRoll.addEventListener("click", handleRoll);
 	btnNew.addEventListener("click", handleNew);
 	btnHold.addEventListener("click", handleHold);
+
+	window.addEventListener("keydown", (event) => {
+		switch (event.code) {
+			case "Enter":
+				return handleHold();
+			case "Space":
+				return handleRoll();
+			case "KeyR":
+				return event.altKey && handleNew();
+		}
+	});
 }
 
 function getCurrents() {
@@ -83,8 +94,6 @@ function changePlayer(currentScore, player) {
 }
 
 function init() {
-	name1.innerText = prompt("Enter first player`s name") || "Player 1";
-	name2.innerText = prompt("Enter second player`s name") || "Player 2";
 	addListeners();
 }
 
