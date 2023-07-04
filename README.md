@@ -1,11 +1,9 @@
-# ---------- 02.07.23 ----------(49)
+# ---------- 04.07.23 ----------(50)(Examine-4)
 
-## Checking homeworks(Quiz App) 👍🏻
+## Questions
 
-## Events Phase
+     ✅ find (30)
+     ✅ search (25)
+     ✅ sum (15)
 
-       ✅ Bubbling phase
-       ✅ Capturing Phase
-       ✅ Target Phase
-
-## Pig Game
+## Increment app (30)
