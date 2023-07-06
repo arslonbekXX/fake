@@ -1,0 +1,29 @@
+:root {
+  --darkPink: #d41876;
+  --lightPink: #ff42a1;
+  --darkPrimary: #0433ff;
+  --lightPrimary: #00a1ff;
+  --dark: #000000;
+  --light: #fff;
+  --red: #ed220d;
+  --green: #60d937;
+  --regular: regular-josefina;
+  --medium: medium-josefina;
+  --bold: bold-josefina;
+  --borderColor: rgba(0, 0, 0, 0.1);
+}
+
+@font-face {
+  font-family: regular-josefina;
+  src: url(../assets/fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: medium-josefina;
+  src: url(../assets/fonts/JosefinSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: bold-josefina;
+  src: url(../assets/fonts/JosefinSans-Bold.ttf);
+}

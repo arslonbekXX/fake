@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 200px;
+	gap: 1rem;
+	padding: 0 1rem;
+}
+
+.box {
+	width: 500px;
+	height: 500px;
+	user-select: none;
+	background-color: rgb(255, 0, 187);
+	color: #fff;
+	cursor: pointer;
+	font-size: 30px;
+	display: grid;
+	place-items: center;
+	transition: 0.03s linear transform;
+}
+
+.inner-box {
+	display: grid;
+	padding: 0.5rem 1rem;
+	width: max-content;
+	height: max-content;
+	background-color: #000;
+	color: #fff;
+}
+
+.box:active {
+	transform: scale(0.97);
+}
+
+/* attribute */
+/* .box[color="danger"] {
+	background-color: red;
+}
+.box[color="success"] {
+	background-color: rgb(21, 234, 24);
+}
+.box[color="dark"] {
+	background-color: black;
+}
+.box[color="light"] {
+	background-color: white;
+	color: #000;
+} */
+
+/* classes */
+.danger {
+	background-color: red;
+}
+.success {
+	background-color: rgb(21, 234, 24);
+}
+.dark {
+	background-color: black;
+}
+.light {
+	background-color: white;
+	color: #000;
+}

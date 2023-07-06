@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<title>QUIZ APP</title>
+	</head>
+	<body>
+		<!-- Wrapper quiz -->
+		<div class="wrapper_quiz">
+			<!-- order number -->
+			<div class="order_number">1</div>
+
+			<!-- timer content -->
+			<div class="timer_content">
+				<p id="timer">10s</p>
+			</div>
+			<div class="clear"></div>
+
+			<!-- questions content -->
+			<div class="questions_content">
+				<p id="number_1">5</p>
+				<p id="operation">*</p>
+				<p id="number_2">10</p>
+			</div>
+
+			<!-- answers content -->
+			<div class="answers_content">
+				<div class="row">
+					<div class="answer_box">
+						<div class="answer_btn">A</div>
+						<span class="answer_text">26</span>
+					</div>
+					<div class="answer_box">
+						<div class="answer_btn">B</div>
+						<span class="answer_text">27</span>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="answer_box">
+						<div class="answer_btn">C</div>
+						<span class="answer_text">28</span>
+					</div>
+					<div class="answer_box">
+						<div class="answer_btn">D</div>
+						<span class="answer_text">29</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- points content -->
+			<ul class="points_content">
+				<li class="pointer pointer-success"></li>
+				<li class="pointer pointer-timed"></li>
+				<li class="pointer pointer-failed"></li>
+			</ul>
+
+			<!-- created by gocodinggo -->
+		</div>
+	</body>
+	<script type="module" src="./main.js"></script>
+</html>

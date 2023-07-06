@@ -1,0 +1,317 @@
+@import "./constants.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper_quiz {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.order_number {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  font-size: 44px;
+  padding: 1rem;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: var(--bold);
+  color: var(--dark);
+  border: 0.5px solid var(--borderColor);
+}
+
+/* Start Timer container */
+.timer_content {
+  width: 120px;
+  height: 120px;
+  background: var(--darkPink);
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin: 1% 2%;
+}
+
+.timer_content p {
+  font-size: 45px;
+  font-family: bold-josefina;
+  color: var(--light);
+}
+
+.clear {
+  clear: both;
+}
+
+/* End Timer Container */
+
+/* Start Questions container */
+.questions_content {
+  width: 60%;
+  height: 80px;
+  background: var(--lightPrimary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.questions_content span {
+  padding: 0.5rem;
+  background: red;
+}
+
+.questions_content #number_1,
+.questions_content #number_2 {
+  padding: 1rem;
+  min-width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 8px;
+  background: var(--lightPink);
+  color: var(--light);
+  font-size: 35px;
+  font-family: var(--medium);
+}
+
+.questions_content #operation {
+  padding: 1rem;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--green);
+  color: var(--dark);
+  font-size: 40px;
+  font-family: var(--bold);
+}
+
+/* End Questions container */
+
+/* Start Answers container */
+.answers_content {
+  width: 60%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.answers_content .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.answers_content .row .answer_box {
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  transition: 0.1s transform linear;
+  cursor: pointer;
+  flex: 1;
+}
+
+.answers_content .row .answer_box:hover {
+  border: 0.5px solid var(--borderColor);
+}
+
+.answers_content .row .answer_box:active {
+  transform: scale(0.93);
+}
+
+.answers_content .row .answer_box .answer_btn {
+  width: 60px;
+  height: 60px;
+  background: var(--darkPrimary);
+  font-size: 25px;
+  color: var(--light);
+  font-family: var(--medium);
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+  margin-right: 1rem;
+}
+
+.answers_content .row .answer_box .answer_text {
+  font-size: 24px;
+  font-family: var(--bold);
+}
+/* End Answers container */
+
+/* Start Points container */
+.points_content {
+  width: 80%;
+  height: 70px;
+  padding: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  border-radius: 5px;
+  border: 0.5px solid var(--borderColor);
+}
+
+.points_content .pointer {
+  width: 70px;
+  height: 70px;
+  background-color: var(--dark);
+  list-style: none;
+  border-radius: 35px;
+  margin-right: 0.5rem;
+}
+/* to`g`ri javob belgilangan holatdagi style */
+.points_content .pointer-success {
+  background-color: var(--green);
+}
+
+/* noto`g`ri javob belgilangan holatdagi style */
+.points_content .pointer-failed {
+  background-color: var(--red);
+}
+
+/* belgilab ulgirilmagan holatdagi style */
+.points_content .pointer-timed {
+  background-color: var(--dark);
+}
+
+/* End Points container */
+
+/* Start Wrapper btn  */
+.wrapper_btn {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper_btn #start_btn {
+  font-size: 50px;
+  height: 70px;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  background-color: var(--darkPink);
+  color: var(--light);
+  font-family: var(--bold);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.wrapper_btn #start_btn:hover {
+  background-color: var(--lightPink);
+  transition: 0.1s all linear;
+}
+
+.wrapper_btn #start_btn:active {
+  transform: scale(0.9);
+}
+
+/* End Wrapper btn  */
+
+/* Start Wrapper points  */
+
+.wrapper_total_points {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s linear all;
+}
+
+.wrapper_total_points .points {
+  width: 309px;
+  height: 240px;
+  background: var(--light);
+  border-radius: 10%;
+  padding: 1.5rem;
+}
+
+.wrapper_total_points .points .point_box {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 1rem 0;
+  align-items: center;
+  padding: 0;
+}
+
+.wrapper_total_points .points .point_box li {
+  margin: 0;
+  list-style: none;
+}
+
+.wrapper_total_points .points .point_box #result_correct,
+.wrapper_total_points .points .point_box #result_incorrect_and_timed {
+  margin-left: auto !important;
+}
+.wrapper_total_points .points .point_box .plus,
+.wrapper_total_points .points .point_box #result_correct,
+.wrapper_total_points .points .point_box #result_incorrect_and_timed {
+  font-size: 40px;
+  margin: 0 1rem;
+  font-family: var(--medium);
+}
+.wrapper_total_points .points .point_box .pointer {
+  width: 80px;
+  height: 80px;
+  background-color: var(--dark);
+  list-style: none;
+  border-radius: 40px;
+}
+/* to`g`ri javob belgilangan holatdagi style */
+.wrapper_total_points .points .point_box .pointer-success {
+  background-color: var(--green);
+}
+
+/* noto`g`ri javob belgilangan holatdagi style */
+.wrapper_total_points .points .point_box .pointer-failed {
+  background-color: var(--red);
+}
+
+.wrapper_total_points .points .total_points {
+  font-family: var(--medium);
+  font-size: 30px;
+  margin-top: 2rem;
+}
+
+.wrapper_total_points .points .total_points #result_total_points {
+  font-family: var(--bold);
+  font-size: 40px;
+  margin-left: auto !important;
+}
+
+/* End Wrapper points  */
+
+/* created by GoCodingGo */
+.gocodinggo {
+  position: absolute;
+  right: 2%;
+  bottom: 1.4%;
+  font-family: var(--bold);
+  font-size: 35px;
+}
+#gocodinggo_dark {
+  color: var(--darkPink);
+}
+
+#gocodinggo_light {
+  color: var(--light);
+}

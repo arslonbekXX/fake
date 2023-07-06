@@ -1,9 +1,15 @@
-# ---------- 04.07.23 ----------(50)(Examine-4)
+# ---------- 06.07.23 ----------(51)
 
-## Questions
+## Checking homeworks(Quiz App)
 
-     ✅ find (30)
-     ✅ search (25)
-     ✅ sum (15)
+## Q
 
-## Increment app (30)
+## Projects
+
+     ✅ Pig game 👍🏻
+     ✅ Tic Tac Toe 👍🏻
+     ✅ Quiz app
+     ✅ Memory game v1
+     ✅ Pomofocus
+     ✅ Tic Tac Toe v2
+     ✅ Speed memory game
