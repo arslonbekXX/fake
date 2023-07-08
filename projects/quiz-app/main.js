@@ -6,19 +6,19 @@ const number1Elm = document.getElementById("number_1");
 const number2Elm = document.getElementById("number_2");
 const operationElm = document.getElementById("operation");
 const answersContent = document.querySelector(".answers_content");
-
+const answer_boxes = document.querySelectorAll(".answer_box");
 // LOGICAL VARIABLES
 const OPERATIONS = ["+", "-", "*"];
-const INTERVAL = 5;
+const INTERVAL = 20;
 const quizzes = [];
 
 // HANDLE FUNCTIONS
 
 function handleAnswer(selectedAnswer) {
-	const { correctAnswer } = quizzes[quizzes.length - 1];
-	if (correctAnswer === selectedAnswer) {
-		console.log("Topding");
-	} else console.log("Topmading");
+	const currentQuiz = quizzes[quizzes.length - 1];
+	const isCorrect = currentQuiz.correctAnswer === selectedAnswer;
+	currentQuiz.status = isCorrect ? "SUCCESS" : "FAIL";
+	nextQuiz();
 }
 // UI FUNCTION
 
@@ -28,27 +28,13 @@ function renderQuiz(quiz) {
 	number2Elm.innerText = number2;
 	operationElm.innerText = operation;
 
-	answersContent.innerHTML = `<div class="row">
-							<div class="answer_box" onclick="handleAnswer(${answers[0]})">
-								<div class="answer_btn">A</div>
-								<span class="answer_text">${answers[0]}</span>
-							</div>
-							<div class="answer_box" onclick="handleAnswer(${answers[1]})">
-								<div class="answer_btn">B</div>
-								<span class="answer_text">${answers[1]}</span>
-							</div>
-						</div>
+	answer_boxes.forEach((box, idx) => {
+		const answer = answers[idx];
+		box.querySelector(".answer_text").innerText = answer;
+		box.addEventListener("click", () => handleAnswer(answer));
+	});
 
-						<div class="row">
-							<div class="answer_box" onclick="handleAnswer(${answers[2]})">
-								<div class="answer_btn">C</div>
-								<span class="answer_text">${answers[2]}</span>
-							</div>
-							<div class="answer_box" onclick="handleAnswer(${answers[3]})">
-								<div class="answer_btn">D</div>
-								<span class="answer_text">${answers[3]}</span>
-							</div>
-</div>`;
+	orderNumber.innerText = quizzes.length;
 }
 
 // LOGIC FUNCTIONS
@@ -80,12 +66,15 @@ function generateQuiz() {
 		operation,
 		correctAnswer,
 		answers,
+		status: "TIMED", // 0 -> TIMED, 2 -> SUCCESS, 3 -> FAIL
 	};
 }
 
 function nextQuiz() {
 	const newQuiz = generateQuiz();
 	quizzes.push(newQuiz);
+
+	console.log("quizzes = ", quizzes);
 
 	renderQuiz(newQuiz);
 }
