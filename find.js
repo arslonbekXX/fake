@@ -17,7 +17,8 @@ function find(words, pattern) {
 			const num = oldIdx === -1 ? counter++ : viewNums[oldIdx];
 			viewNums.push(num);
 		}
-		return viewNums.join("");
+		
+		return viewNums.join(""); // 12234
 	}
 
 	for (let word of words) {
@@ -29,8 +30,8 @@ function find(words, pattern) {
 
 	return words.filter((word, idx) => result[idx] === numberPattern);
 }
-//                 123    123    122    122    121    111     122
-console.log(find(["abc", "deq", "mee", "aqq", "dkd", "ccc"], "abb")); // ["mee","aqq"]
+//                 [123 ,   123 ,   122  ,  122 ,   121 ,   111,     122]
+console.log(find(["abc", "deq", "mee", "aqq", "dkd", "ccc"], "abb")); // ["mee","aqq"] 122
 console.log(find(["pdp", "g-9", "pdp-g-8", "pdp-g-7", "aba", "cbc"], "mam")); // ["pdp","aba","cbc"]
 console.log(find(["a", "b", "c", "bc"], "c")); // ["a","b","c"]
 console.log(find(["pdp", "abb", "baa", "poo"], "app")); // ["abb","baa", "poo"]
