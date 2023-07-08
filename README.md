@@ -1,8 +1,8 @@
-# ---------- 06.07.23 ----------(51)
+# ---------- 08.07.23 ----------(52)
+
+## [Examine-4](https://bit.ly/3PMWh9J)
 
 ## Checking homeworks(Quiz App)
-
-## Q
 
 ## Projects
 
