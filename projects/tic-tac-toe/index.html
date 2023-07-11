@@ -3,67 +3,47 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
 		<title>Tic-Tac-Toe</title>
 		<link rel="stylesheet" href="./main.css" />
 	</head>
 	<body>
-		<main class="container">
-			<div class="game">
-				<h4 id="winner" style="display: none">Winner: O</h4>
-				<div class="board">
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-				</div>
+		<main class="wrapper">
+			<div class="control-zone">
+				<h3>Form</h3>
+				<form id="control-form">
+					<div class="mb-3">
+						<input
+							min="1"
+							max="5"
+							required
+							type="number"
+							class="form-control"
+							id="x"
+							placeholder="Enter X"
+						/>
+					</div>
+					<div class="mb-3">
+						<input
+							min="1"
+							max="5"
+							required
+							type="number"
+							class="form-control"
+							id="y"
+							placeholder="Enter Y"
+						/>
+					</div>
+					<button type="reset" class="btn btn-info">Reset</button>
+					<button class="btn btn-primary">Submit</button>
+				</form>
 			</div>
-			<div class="game">
-				<h4 id="winner" style="display: none">Winner: O</h4>
-				<div class="board">
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-				</div>
-			</div>
-			<div class="game">
-				<h4 id="winner" style="display: none">Winner: O</h4>
-				<div class="board">
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-				</div>
-			</div>
-			<div class="game">
-				<h4 id="winner" style="display: none">Winner: O</h4>
-				<div class="board">
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-					<button class="cell"></button>
-				</div>
-			</div>
+			<div class="game-zone d-none"></div>
 		</main>
 	</body>
 	<script src="./main.js"></script>

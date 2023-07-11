@@ -1,22 +1,47 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	margin: 0;
 }
 
-.container {
-	padding: 2rem 5rem;
+.wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
 	place-items: center;
 	height: 100vh;
 }
 
-.board {
+.control-zone {
 	width: 400px;
-	height: 400px;
+}
+
+.game-zone {
+	width: 100%;
+	display: grid;
+	height: 100vh;
+	gap: 0.5rem;
+	padding: 1rem;
+}
+
+.game {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
+	position: relative;
+}
+
+.winner::before {
+	content: attr(winner);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #00000090;
+	display: grid;
+	place-items: center;
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	z-index: 1;
 }
 
 .cell {
