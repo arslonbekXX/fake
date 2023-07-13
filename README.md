@@ -1,15 +1,15 @@
 # ---------- 13.07.23 ----------(54)
 
-## Checking homeworks(Tic-tac-toe history)
+## Checking homeworks(Quiz ap v2 (with results))
 
 ## Projects
 
      ✅ Pig game 👍🏻
      ✅ Tic Tac Toe 👍🏻
      ✅ Tic Tac Toe v2 (x & y) 👍🏻
+     ✅ Quiz app v1 👍🏻
      ✅ Tic Tac Toe v3 (history)
-     ✅ Quiz app v1
-     ✅ Quiz app v2 (with answers)
+     ✅ Quiz app v2 (with results)
      ✅ Memory game
      ✅ Pomofocus
      ✅ Speed memory game

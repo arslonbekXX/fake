@@ -6,7 +6,8 @@ const randomBtn = document.getElementById("random_btn");
 const todosWrapper = document.querySelector(".todos");
 const form = document.querySelector("form");
 // LOGICAL VARIABLES
-const todos = [];
+const KEY_TODOS = "data-todos";
+const todos = JSON.parse(localStorage.getItem(KEY_TODOS) || "[]");
 let mode = "ADD"; // ADD || EDIT
 let editingTodoIdx;
 
@@ -27,6 +28,8 @@ function handleSubmit(e) {
 		mode = "ADD";
 	}
 	todoInput.value = "";
+
+	localStorage.setItem(KEY_TODOS, JSON.stringify(todos));
 	renderTodos();
 }
 
@@ -46,6 +49,7 @@ function handleEdit(idx) {
 
 function handleDelete(idx) {
 	todos.splice(idx, 1);
+	localStorage.setItem(KEY_TODOS, JSON.stringify(todos));
 	renderTodos();
 }
 
@@ -53,6 +57,7 @@ function handleRandom() {
 	todos.sort(() => Math.random() - 0.5);
 	renderTodos();
 }
+
 function handleClear() {
 	todos.splice(0, todos.length);
 	renderTodos();
@@ -65,26 +70,42 @@ randomBtn.addEventListener("click", handleRandom);
 
 // UI FUNCTIONS
 
-function renderTodos() {
-	let result = "";
+function createBtn(title, className, onClick) {
+	const btn = document.createElement("button");
+	btn.className = className;
+	btn.innerText = title;
+	btn.addEventListener("click", onClick);
 
+	return btn;
+}
+
+function renderTodos() {
+	todosWrapper.innerHTML = "";
 	for (let i = 0; i < todos.length; i++) {
 		const todo = todos[i];
 		const name = todo.name;
 		const isCompleted = todo.isCompleted;
-		result += `<li class="list-group-item justify-content-between d-flex align-items-center ${
-			isCompleted ? "list-group-item-success" : ""
-		}">
-  <span>${name}</span>
-  <div class="btn-group">
-   <button type="button" onclick="handleComplete('${i}')" class="btn btn-success">${
-			isCompleted ? "Uncomplete" : "Complete"
-		}</button>
-   <button type="button" onclick="handleEdit('${i}')" class="btn btn-warning">Edit</button>
-   <button type="button" onclick="handleDelete('${i}')" class="btn btn-danger">Delete</button>
-  </div>
- </li>`;
-	}
+		const todoElm = document.createElement("li");
+		todoElm.className = "list-group-item justify-content-between d-flex align-items-center";
+		if (isCompleted) todoElm.classList.add("list-group-item-success");
 
-	todosWrapper.innerHTML = result;
+		const titleElm = document.createElement("span");
+		titleElm.innerText = name;
+
+		const btnGroup = document.createElement("div");
+		btnGroup.className = "btn-group";
+
+		const btnComplete = createBtn(isCompleted ? "Uncompleted" : "Complete", "btn btn-success", () =>
+			handleComplete(i)
+		);
+		const btnEdit = createBtn("Edit", "btn btn-warning", () => handleEdit(i));
+		const btnDanger = createBtn("Delete", "btn btn-danger", () => handleDelete(i));
+
+		btnGroup.append(btnComplete, btnEdit, btnDanger);
+		todoElm.append(titleElm, btnGroup);
+
+		todosWrapper.appendChild(todoElm);
+	}
 }
+
+renderTodos();

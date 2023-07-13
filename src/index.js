@@ -1,1 +1,4 @@
-console.log("Lesson-53");
+const person = {
+	name: "arslonbek",
+	age: 20,
+};
