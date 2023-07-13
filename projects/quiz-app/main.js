@@ -1,16 +1,22 @@
 import { randomNumber } from "./utils.js";
+import { OPERATIONS, INTERVAL, MAX_SECOND, MIN_SECOND, MAX_COUNT } from "./constants.js";
+
 // DOM VARIABLES
-const orderNumber = document.querySelector(".order_number");
-const timer = document.getElementById("timer");
+const orderNumber = document.querySelector(".order");
+const timer = document.querySelector(".timer");
 const number1Elm = document.getElementById("number_1");
 const number2Elm = document.getElementById("number_2");
 const operationElm = document.getElementById("operation");
-const answersContent = document.querySelector(".answers_content");
-const answer_boxes = document.querySelectorAll(".answer_box");
+const answersContent = document.querySelector(".quiz_answers");
+const pointsContent = document.querySelector(".points");
+
 // LOGICAL VARIABLES
-const OPERATIONS = ["+", "-", "*"];
-const INTERVAL = 20;
+
 const quizzes = [];
+const time = {
+	intervalID: null,
+	value: MAX_SECOND,
+};
 
 // HANDLE FUNCTIONS
 
@@ -21,20 +27,31 @@ function handleAnswer(selectedAnswer) {
 	nextQuiz();
 }
 // UI FUNCTION
-
 function renderQuiz(quiz) {
 	const { number1, number2, operation, correctAnswer, answers } = quiz;
 	number1Elm.innerText = number1;
 	number2Elm.innerText = number2;
 	operationElm.innerText = operation;
 
-	answer_boxes.forEach((box, idx) => {
+	const answerBoxes = answersContent.children;
+
+	for (let idx = 0; idx < answerBoxes.length; idx++) {
+		const answerBox = answerBoxes[idx];
 		const answer = answers[idx];
-		box.querySelector(".answer_text").innerText = answer;
-		box.addEventListener("click", () => handleAnswer(answer));
-	});
+		answerBox.innerText = answer;
+		answerBox.onclick = () => handleAnswer(answer);
+	}
 
 	orderNumber.innerText = quizzes.length;
+}
+
+function renderPoint() {
+	if (quizzes.length <= 0) return;
+	const { status } = quizzes[quizzes.length - 1];
+	const point = document.createElement("div");
+	point.classList.add("point", `point-${status}`);
+	point.innerText = quizzes.length;
+	pointsContent.appendChild(point);
 }
 
 // LOGIC FUNCTIONS
@@ -70,17 +87,30 @@ function generateQuiz() {
 	};
 }
 
+function startTimer() {
+	clearInterval(time.intervalID);
+	time.value = MAX_SECOND;
+	timer.innerText = `${time.value}s`;
+
+	time.intervalID = setInterval(() => {
+		timer.innerText = `${--time.value}s`;
+		if (time.value === MIN_SECOND) nextQuiz();
+	}, 1000);
+}
+
 function nextQuiz() {
+	if (quizzes.length === MAX_COUNT) return clearInterval(time.intervalID);
+
+	renderPoint();
 	const newQuiz = generateQuiz();
 	quizzes.push(newQuiz);
 
-	console.log("quizzes = ", quizzes);
-
 	renderQuiz(newQuiz);
+	startTimer();
 }
 
 function init() {
 	nextQuiz();
 }
 
-window.addEventListener("load", init);
+init();

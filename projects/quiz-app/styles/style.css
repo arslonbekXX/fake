@@ -1,21 +1,27 @@
 @import "./constants.css";
+* {
+	user-select: none;
+}
 
 body {
 	margin: 0;
 	padding: 0;
 }
 
-.wrapper_quiz {
-	position: relative;
+.quiz {
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .d-none {
 	display: none !important;
 }
 
-.order_number {
+.order {
 	position: absolute;
 	left: 2%;
 	top: 2%;
@@ -23,16 +29,16 @@ body {
 	padding: 1rem;
 	width: 40px;
 	height: 40px;
-	justify-content: center;
-	align-items: center;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: var(--bold);
 	color: var(--dark);
 	border: 0.5px solid var(--borderColor);
 }
 
 /* Start Timer container */
-.timer_content {
+.timer {
 	width: 120px;
 	height: 120px;
 	background: var(--darkPink);
@@ -40,24 +46,18 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	float: right;
-	margin: 1% 2%;
-}
-
-.timer_content p {
+	position: absolute;
+	top: 2%;
+	right: 2%;
 	font-size: 45px;
 	font-family: bold-josefina;
 	color: var(--light);
 }
 
-.clear {
-	clear: both;
-}
-
 /* End Timer Container */
 
 /* Start Questions container */
-.questions_content {
+.quiz_content {
 	width: 60%;
 	height: 80px;
 	background: var(--lightPrimary);
@@ -69,13 +69,13 @@ body {
 	margin-bottom: 1rem;
 }
 
-.questions_content span {
+.quiz_content span {
 	padding: 0.5rem;
 	background: red;
 }
 
-.questions_content #number_1,
-.questions_content #number_2 {
+.quiz_content #number_1,
+.quiz_content #number_2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -91,7 +91,7 @@ body {
 	font-family: var(--medium);
 }
 
-.questions_content #operation {
+.quiz_content #operation {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -109,58 +109,39 @@ body {
 /* End Questions container */
 
 /* Start Answers container */
-.answers_content {
+.quiz_answers {
 	width: 60%;
 	height: 300px;
 	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1rem;
 }
 
-.answers_content .row {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	margin: 2rem 0;
-}
-
-.answers_content .row .answer_box {
-	padding: 1rem 5rem;
-	display: flex;
-	align-items: center;
-	transition: 0.1s transform linear;
+.quiz_answers .answer_box {
+	display: grid;
+	place-items: center;
+	font-size: 40px;
+	font-weight: bold;
+	border: 1px solid;
 	cursor: pointer;
-	flex: 1;
+	transition: 0.03s transform linear;
 }
 
-.answers_content .row .answer_box:hover {
-	border: 0.5px solid var(--borderColor);
+.quiz_answers .answer_box:active {
+	transform: scale(0.98);
 }
 
-.answers_content .row .answer_box:active {
-	transform: scale(0.93);
-}
-
-.answers_content .row .answer_box .answer_btn {
-	width: 60px;
-	height: 60px;
-	background: var(--darkPrimary);
-	font-size: 25px;
-	color: var(--light);
-	font-family: var(--medium);
-	border-radius: 30px;
-	text-align: center;
-	line-height: 60px;
-	margin-right: 1rem;
-}
-
-.answers_content .row .answer_box .answer_text {
-	font-size: 24px;
-	font-family: var(--bold);
-}
 /* End Answers container */
 
 /* Start Points container */
-.points_content {
-	width: 80%;
+.points {
+	position: absolute;
+	left: 2%;
+	right: 2%;
+	bottom: 2%;
+	width: auto;
 	height: 70px;
 	padding: 1rem;
 	margin-left: 2rem;
@@ -169,26 +150,27 @@ body {
 	border: 0.5px solid var(--borderColor);
 }
 
-.points_content .pointer {
+.points .point {
 	width: 70px;
 	height: 70px;
 	background-color: var(--dark);
 	list-style: none;
 	border-radius: 35px;
 	margin-right: 0.5rem;
+	display: grid;
+	place-items: center;
+	color: #fff;
+	font-size: 30px;
 }
-/* to`g`ri javob belgilangan holatdagi style */
-.points_content .pointer-success {
+.points .point-SUCCESS {
 	background-color: var(--green);
 }
 
-/* noto`g`ri javob belgilangan holatdagi style */
-.points_content .pointer-failed {
+.points .point-FAIL {
 	background-color: var(--red);
 }
 
-/* belgilab ulgirilmagan holatdagi style */
-.points_content .pointer-timed {
+.points .point-TIMED {
 	background-color: var(--dark);
 }
 
@@ -275,7 +257,7 @@ body {
 	margin: 0 1rem;
 	font-family: var(--medium);
 }
-.wrapper_total_points .points .point_box .pointer {
+.wrapper_total_points .points .point_box .point {
 	width: 80px;
 	height: 80px;
 	background-color: var(--dark);
@@ -283,12 +265,12 @@ body {
 	border-radius: 40px;
 }
 /* to`g`ri javob belgilangan holatdagi style */
-.wrapper_total_points .points .point_box .pointer-success {
+.wrapper_total_points .points .point_box .point-success {
 	background-color: var(--green);
 }
 
 /* noto`g`ri javob belgilangan holatdagi style */
-.wrapper_total_points .points .point_box .pointer-failed {
+.wrapper_total_points .points .point_box .point-failed {
 	background-color: var(--red);
 }
 

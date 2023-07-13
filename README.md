@@ -1,6 +1,6 @@
 # ---------- 13.07.23 ----------(54)
 
-## Checking homeworks(Tic-tac-toe x & y)
+## Checking homeworks(Tic-tac-toe history)
 
 ## Projects
 
@@ -14,16 +14,11 @@
      ✅ Pomofocus
      ✅ Speed memory game
 
-## Organishimiz kerak bolganlar
+## Fragment
 
-     ✅ Form bilan ishlash 👍🏻
-     ✅ Fragment
-     ✅ Attributes 👍🏻
+## Localstorage
 
-## Bilimlarimiz
-
-     ✅ Event (phase, target)
-     ✅ DOM manipulation
+## Iterations
 
 ## Home Works
 
