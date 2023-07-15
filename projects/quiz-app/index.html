@@ -7,25 +7,37 @@
 		<title>QUIZ APP</title>
 	</head>
 	<body>
-		<div class="order">1</div>
-		<div class="timer">10s</div>
+		<div class="game-zone">
+			<div class="order">1</div>
+			<div class="timer">10s</div>
 
-		<div class="quiz">
-			<div class="quiz_content">
-				<p id="number_1">5</p>
-				<p id="operation">*</p>
-				<p id="number_2">10</p>
+			<div class="quiz">
+				<div class="quiz_content">
+					<p id="number_1">5</p>
+					<p id="operation">*</p>
+					<p id="number_2">10</p>
+				</div>
+
+				<div class="quiz_answers">
+					<div class="answer_box">26</div>
+					<div class="answer_box">27</div>
+					<div class="answer_box">28</div>
+					<div class="answer_box">29</div>
+				</div>
 			</div>
 
-			<div class="quiz_answers">
-				<div class="answer_box">26</div>
-				<div class="answer_box">27</div>
-				<div class="answer_box">28</div>
-				<div class="answer_box">29</div>
-			</div>
+			<ul class="points"></ul>
 		</div>
+		<div class="result-zone d-none">
+			<h2 class="title">Results</h2>
 
-		<ul class="points"></ul>
+			<div class="scores">
+				<div class="score score--FAIL" title="1,4,5">0</div>
+				<div class="score score--TIMED" title="6,2,3">0</div>
+				<div class="score score--SUCCESS" title="1,4,5">0</div>
+			</div>
+			<button class="show-answers-btn">Show answers</button>
+		</div>
 	</body>
 	<script type="module" src="./main.js"></script>
 </html>

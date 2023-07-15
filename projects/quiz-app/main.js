@@ -2,13 +2,16 @@ import { randomNumber } from "./utils.js";
 import { OPERATIONS, INTERVAL, MAX_SECOND, MIN_SECOND, MAX_COUNT } from "./constants.js";
 
 // DOM VARIABLES
-const orderNumber = document.querySelector(".order");
+const gameZone = document.querySelector(".game-zone");
+const resultZone = document.querySelector(".result-zone");
+const orderNumberElm = document.querySelector(".order");
 const timer = document.querySelector(".timer");
 const number1Elm = document.getElementById("number_1");
 const number2Elm = document.getElementById("number_2");
 const operationElm = document.getElementById("operation");
 const answersContent = document.querySelector(".quiz_answers");
 const pointsContent = document.querySelector(".points");
+const showAnswersBtn = document.querySelector(".show-answers-btn");
 
 // LOGICAL VARIABLES
 
@@ -24,11 +27,13 @@ function handleAnswer(selectedAnswer) {
 	const currentQuiz = quizzes[quizzes.length - 1];
 	const isCorrect = currentQuiz.correctAnswer === selectedAnswer;
 	currentQuiz.status = isCorrect ? "SUCCESS" : "FAIL";
+	currentQuiz.selectedAnswer = selectedAnswer;
 	nextQuiz();
 }
+
 // UI FUNCTION
-function renderQuiz(quiz) {
-	const { number1, number2, operation, correctAnswer, answers } = quiz;
+function renderQuiz(quiz, isShow = false) {
+	const { number1, number2, orderNumber, operation, correctAnswer, answers, selectedAnswer } = quiz;
 	number1Elm.innerText = number1;
 	number2Elm.innerText = number2;
 	operationElm.innerText = operation;
@@ -38,11 +43,20 @@ function renderQuiz(quiz) {
 	for (let idx = 0; idx < answerBoxes.length; idx++) {
 		const answerBox = answerBoxes[idx];
 		const answer = answers[idx];
+		let className = "answer_box ";
 		answerBox.innerText = answer;
-		answerBox.onclick = () => handleAnswer(answer);
+
+		if (isShow) {
+			if (correctAnswer === answer) className += "SUCCESS";
+			else if (selectedAnswer === answer) className += "FAIL";
+
+			answerBox.className = className;
+		} else {
+			answerBox.onclick = () => handleAnswer(answer);
+		}
 	}
 
-	orderNumber.innerText = quizzes.length;
+	orderNumberElm.innerText = orderNumber;
 }
 
 function renderPoint() {
@@ -55,7 +69,33 @@ function renderPoint() {
 }
 
 // LOGIC FUNCTIONS
+function onFinish() {
+	clearInterval(time.intervalID);
+	gameZone.classList.toggle("d-none");
+	resultZone.classList.toggle("d-none");
 
+	const statuses = ["SUCCESS", "FAIL", "TIMED"];
+
+	for (let status of statuses) {
+		const scoreElm = resultZone.querySelector(`.score--${status}`);
+		const score = quizzes.filter((q) => q.status === status).length;
+		scoreElm.innerText = score;
+	}
+
+	showAnswersBtn.addEventListener("click", () => {
+		gameZone.classList.toggle("d-none");
+		resultZone.classList.toggle("d-none");
+		answersContent.style.pointerEvents = "none";
+
+		renderQuiz(quizzes[quizzes.length - 1], true);
+
+		const points = gameZone.querySelectorAll(".point");
+
+		points.forEach((point, idx) => {
+			point.addEventListener("click", () => renderQuiz(quizzes[idx], true));
+		});
+	});
+}
 function generateAnswers(correctAnswer) {
 	const answers = [correctAnswer];
 	for (let i = 1; i <= 3; i++) {
@@ -78,11 +118,13 @@ function generateQuiz() {
 	const correctAnswer = eval(`${number1}${operation}${number2}`);
 	const answers = generateAnswers(correctAnswer);
 	return {
+		orderNumber: quizzes.length + 1,
 		number1,
 		number2,
 		operation,
 		correctAnswer,
 		answers,
+		selectedAnswer: null,
 		status: "TIMED", // 0 -> TIMED, 2 -> SUCCESS, 3 -> FAIL
 	};
 }
@@ -99,9 +141,10 @@ function startTimer() {
 }
 
 function nextQuiz() {
-	if (quizzes.length === MAX_COUNT) return clearInterval(time.intervalID);
-
 	renderPoint();
+
+	if (quizzes.length === MAX_COUNT) return onFinish();
+
 	const newQuiz = generateQuiz();
 	quizzes.push(newQuiz);
 
