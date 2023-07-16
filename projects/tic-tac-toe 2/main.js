@@ -1,91 +1,64 @@
-// UI VARIABLES
-const gameZone = document.querySelector(".game-zone");
-const controlZone = document.querySelector(".control-zone");
-const controlForm = document.forms[0];
-const xInput = document.getElementById("x");
-const yInput = document.getElementById("y");
+// UI VARS
+const resetBtn = document.querySelector(".reset-btn");
+const boardElm = document.querySelector(".board");
 
-// HANDLER FUNCTIONS
-function handleSubmit(event) {
-	event.preventDefault();
-	const x = +xInput.value;
-	const y = +yInput.value;
+// LOGIC VARS
+const boards = [[null, null, null, null, null, null, null, null, null]];
+let currentStep = 0;
+let currentPlayer = "X";
 
-	controlZone.setAttribute("class", "control-zone d-none");
-	gameZone.setAttribute("class", "game-zone");
+function checkWinner(board) {
+	const winnerCondensations = [
+		[0, 1, 2],
+		[3, 4, 5],
+		[6, 7, 8],
+		[0, 3, 6],
+		[1, 4, 7],
+		[2, 5, 8],
+		[0, 4, 8],
+		[2, 4, 6],
+	];
 
-	startGame(x, y);
+	for (let [a, c, b] of winnerCondensations)
+		if (board[a] === board[b] && board[b] === board[c]) return board[a];
+
+	return "";
 }
 
-function startGame(x, y) {
-	const count = x * y;
-	const games = [];
+// HANDLE FUNCTIONS
+function handleCell(cellIdx) {
+	const nextBoard = [...boards[currentStep]];
+	nextBoard[cellIdx] = currentPlayer;
+	currentPlayer = currentPlayer === "X" ? "O" : "X";
 
-	for (let i = 0; i < count; i++) {
-		const game = document.createElement("div");
-		game.className = "game";
+	boards.push(nextBoard);
+	currentStep++;
+	renderBoard(nextBoard);
 
-		for (let i = 0; i < 9; i++) {
-			const cell = document.createElement("button");
-			cell.className = "cell";
-			game.appendChild(cell);
-		}
-		games.push(game);
+	console.log("boards = ", boards);
+}
+
+// UI FUNCTIONS
+function renderBoard(board = []) {
+	boardElm.innerHTML = "";
+	for (let idx = 0; idx < board.length; idx++) {
+		const cell = board[idx];
+		const cellElm = document.createElement("div");
+		cellElm.className = "cell";
+		cellElm.innerText = cell;
+
+		cellElm.addEventListener("click", () => handleCell(idx));
+		boardElm.appendChild(cellElm);
 	}
-
-	gameZone.append(...games);
-	gameZone.style.gridTemplateColumns = `repeat(${y}, 1fr)`;
-	gameZone.style.gridTemplateRows = `repeat(${x}, 1fr)`;
-
-	games.forEach((game) => {
-		const cells = game.querySelectorAll(".cell");
-
-		// LOGICAL VARIABLES
-		let board = new Array(9).fill(null);
-		let nextPlayer = "X";
-		let winner = "";
-
-		cells.forEach((cell, idx) => {
-			cell.addEventListener("click", () => {
-				if (cell.innerText || winner) return;
-				board[idx] = nextPlayer;
-				cell.innerText = nextPlayer;
-				nextPlayer = nextPlayer === "X" ? "O" : "X";
-
-				winner = checkWinner();
-				if (winner) {
-					game.setAttribute("winner", `Winner - ${winner}`);
-					game.classList.add("winner");
-				}
-			});
-		});
-
-		function checkWinner() {
-			const winnerCondensations = [
-				[0, 1, 2],
-				[3, 4, 5],
-				[6, 7, 8],
-				[0, 3, 6],
-				[1, 4, 7],
-				[2, 5, 8],
-				[0, 4, 8],
-				[2, 4, 6],
-			];
-
-			for (let [a, c, b] of winnerCondensations)
-				if (board[a] === board[b] && board[b] === board[c]) return board[a];
-
-			return "";
-		}
-	});
 }
+// LOGIC FUNCTIONS
 
-function addListeners() {
-	controlForm.addEventListener("submit", handleSubmit);
+function startGame() {
+	renderBoard(boards[currentStep]);
 }
 
 function init() {
-	addListeners();
+	startGame();
 }
 
 init();

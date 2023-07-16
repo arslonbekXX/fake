@@ -1,69 +1,50 @@
+:root {
+	--light-gray: #10101030;
+	--light: #ffffff;
+}
+
 * {
 	box-sizing: border-box;
+	font-family: Futura, "Century Gothic";
 }
 body {
 	margin: 0;
 }
 
-.wrapper {
-	display: grid;
-	place-items: center;
-	height: 100vh;
-}
-
-.control-zone {
-	width: 400px;
-}
-
-.game-zone {
-	width: 100%;
-	display: grid;
-	height: 100vh;
-	gap: 0.5rem;
+.container {
+	display: flex;
+	gap: 1rem;
 	padding: 1rem;
 }
 
-.game {
+.sudoku {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.sudoku .board {
+	width: 200px;
+	height: 200px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
-	position: relative;
+	background-color: var(--light-gray);
+	gap: 2px;
+	padding: 2px;
 }
 
-.winner::before {
-	content: attr(winner);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-color: #00000090;
+.board .cell {
 	display: grid;
 	place-items: center;
-	font-size: 30px;
-	color: white;
+	background-color: var(--light);
+	font-size: 25px;
 	font-weight: bold;
-	z-index: 1;
-}
-
-.cell {
-	background: #fff;
-	border: 1px solid #999;
-	float: left;
-	font-size: 50px;
-	line-height: 34px;
-	margin-right: -1px;
-	margin-top: -1px;
-	padding: 0;
-	text-align: center;
 	cursor: pointer;
-	font-weight: bold;
-	font-family: Gothic, Futura, sans-serif;
+	transition: transform 0.03s linear;
 }
 
-.cell:focus {
-	background: #ddd;
-	outline: none;
-}
-
-.btn {
-	margin-top: 1rem;
+.board .cell:active {
+	transform: scale(0.95);
 }
