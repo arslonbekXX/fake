@@ -1,6 +1,6 @@
-# ---------- 13.07.23 ----------(54)
+# ---------- 16.07.23 ----------(add-2)
 
-## Checking homeworks(Quiz ap v2 (with results))
+## Checking homeworks(Tic tac toe (with history))
 
 ## Projects
 
@@ -8,15 +8,15 @@
      ✅ Tic Tac Toe 👍🏻
      ✅ Tic Tac Toe v2 (x & y) 👍🏻
      ✅ Quiz app v1 👍🏻
+     ✅ Quiz app v2 (with results) 👍🏻
      ✅ Tic Tac Toe v3 (history)
-     ✅ Quiz app v2 (with results)
      ✅ Memory game
      ✅ Pomofocus
      ✅ Speed memory game
 
-## Fragment
+## Fragment 👍🏻
 
-## Localstorage
+## Localstorage 👍🏻
 
 ## Iterations
 
