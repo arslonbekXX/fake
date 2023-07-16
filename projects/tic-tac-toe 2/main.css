@@ -48,3 +48,9 @@ body {
 .board .cell:active {
 	transform: scale(0.95);
 }
+
+.histories {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}

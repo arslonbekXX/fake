@@ -1,13 +1,15 @@
 // UI VARS
 const resetBtn = document.querySelector(".reset-btn");
 const boardElm = document.querySelector(".board");
+const playerElm = document.querySelector(".player");
+const historiesElm = document.querySelector(".histories");
 
 // LOGIC VARS
-const boards = [[null, null, null, null, null, null, null, null, null]];
-let currentStep = 0;
-let currentPlayer = "X";
+let boards = [new Array(9).fill(null)];
+let currentStep = 1;
+let winnerExist = false;
 
-function checkWinner(board) {
+function getWinner(board) {
 	const winnerCondensations = [
 		[0, 1, 2],
 		[3, 4, 5],
@@ -27,34 +29,76 @@ function checkWinner(board) {
 
 // HANDLE FUNCTIONS
 function handleCell(cellIdx) {
-	const nextBoard = [...boards[currentStep]];
-	nextBoard[cellIdx] = currentPlayer;
-	currentPlayer = currentPlayer === "X" ? "O" : "X";
+	if (winnerExist) return;
+	const nextBoard = [...boards[boards.length - 1]];
+	if (nextBoard[cellIdx]) return;
 
+	const currentPlayer = currentStep % 2 === 1 ? "X" : "O";
+	nextBoard[cellIdx] = currentPlayer;
+
+	renderHistories();
 	boards.push(nextBoard);
 	currentStep++;
 	renderBoard(nextBoard);
-
-	console.log("boards = ", boards);
+	renderPlayer();
 }
 
+function handleReset() {
+	currentStep = 0;
+	boards = [new Array(9).fill(null)];
+	winnerExist = false;
+	renderBoard(boards[currentStep]);
+}
+
+function handleHistory(stepIdx) {
+	const currentBoard = boards[stepIdx];
+	console.log("currentBoard  = ", currentBoard);
+}
 // UI FUNCTIONS
 function renderBoard(board = []) {
-	boardElm.innerHTML = "";
-	for (let idx = 0; idx < board.length; idx++) {
-		const cell = board[idx];
-		const cellElm = document.createElement("div");
-		cellElm.className = "cell";
-		cellElm.innerText = cell;
+	const cellElms = boardElm.children;
 
-		cellElm.addEventListener("click", () => handleCell(idx));
-		boardElm.appendChild(cellElm);
+	for (let i = 0; i < cellElms.length; i++) {
+		const cell = board[i];
+		const cellElm = cellElms[i];
+		cellElm.innerText = cell;
+		cellElm.onclick = () => handleCell(i);
 	}
 }
+
+function renderHistories() {
+	const historiesCount = boards.length;
+	historiesElm.innerHTML = "";
+	for (let i = 0; i < historiesCount; i++) {
+		const historyBtn = document.createElement("button");
+		const isCurrent = i === currentStep;
+
+		if (i === 0) historyBtn.innerText = "Go to game start(current)";
+		else historyBtn.innerText = `Go to move #${i + 1}(current)`;
+
+		historyBtn.onclick = () => handleHistory(i);
+		historiesElm.appendChild(historyBtn);
+	}
+}
+
+function renderPlayer() {
+	const winner = getWinner(boards[boards.length - 1]);
+	const currentPlayer = (currentStep - 1) % 2 === 1 ? "X" : "O";
+	if (winner) {
+		winnerExist = true;
+		playerElm.innerText = `Winner ${currentPlayer}`;
+		return;
+	}
+
+	const nextPlayer = currentStep % 2 === 1 ? "X" : "O";
+	playerElm.innerText = `Next Player: ${nextPlayer}`;
+}
+
 // LOGIC FUNCTIONS
 
 function startGame() {
-	renderBoard(boards[currentStep]);
+	renderBoard(boards[boards.length - 1]);
+	resetBtn.addEventListener("click", handleReset);
 }
 
 function init() {
