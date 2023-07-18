@@ -43,6 +43,7 @@ body {
 	font-weight: bold;
 	cursor: pointer;
 	transition: transform 0.03s linear;
+	user-select: none;
 }
 
 .board .cell:active {

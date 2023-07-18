@@ -1,4 +1,4 @@
-# ---------- 16.07.23 ----------(add-2)
+# ---------- 18.07.23 ----------(55)
 
 ## Checking homeworks(Tic tac toe (with history))
 
@@ -9,18 +9,29 @@
      ✅ Tic Tac Toe v2 (x & y) 👍🏻
      ✅ Quiz app v1 👍🏻
      ✅ Quiz app v2 (with results) 👍🏻
-     ✅ Tic Tac Toe v3 (history)
+     ✅ Tic Tac Toe v3 (history) 👍🏻
      ✅ Memory game
      ✅ Pomofocus
      ✅ Speed memory game
 
-## Fragment 👍🏻
+## Git and Github 👍🏻
 
-## Localstorage 👍🏻
+## Git Commands
 
-## Iterations
-
-## Home Works
-
-     ✅ link:  https://react-hooks.netlify.app/isolated/final/04.extra-3.js
-     ✅ localStorage (JSON.parse() and JSON.stringify())
+    ✅ git init
+    ✅ git add
+    ✅ git remote
+    ✅ git status
+    ✅ git commit
+    ✅ git checkout
+    ✅ git push
+    ✅ git pull
+    ✅ git config
+    ✅ git fetch
+    ✅ git merge
+    ✅ git branch
+    ✅ git log
+    ✅ git clone
+    ------------
+    ✅ git stash 👍🏻
+    ✅ git diff 👍🏻
