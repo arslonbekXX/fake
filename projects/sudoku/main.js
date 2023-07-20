@@ -43,3 +43,7 @@ function init() {
 }
 
 init();
+
+function getValues() {
+	// ...
+}
