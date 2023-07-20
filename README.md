@@ -18,11 +18,11 @@
 
 ## Git Commands
 
-    ✅ git init
-    ✅ git add
+    ✅ git init 👍🏻
+    ✅ git add 👍🏻
+    ✅ git status 👍🏻
+    ✅ git commit 👍🏻
     ✅ git remote
-    ✅ git status
-    ✅ git commit
     ✅ git checkout
     ✅ git push
     ✅ git pull
@@ -33,5 +33,9 @@
     ✅ git log
     ✅ git clone
     ------------
-    ✅ git stash 👍🏻
-    ✅ git diff 👍🏻
+    ✅ git stash
+    ✅ git diff
+
+## Links
+
+     ✅ https://www.atlassian.com/git/glossary
