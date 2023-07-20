@@ -30,7 +30,7 @@ export const getColumns = (activeIdx) => {
 	return activeColumns[activeIdx];
 };
 
-export const getCellOfBoard = ({ boardIdx, cellIdx }) => {
+export const getActiveBoards = ({ boardIdx, cellIdx }) => {
 	const result = {};
 
 	const rowBoards = getRows(boardIdx);
