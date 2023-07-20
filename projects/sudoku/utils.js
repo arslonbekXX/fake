@@ -33,7 +33,7 @@ export const getColumns = (activeIdx) => {
 export const getCellOfBoard = ({ boardIdx, cellIdx }) => {
 	const result = {};
 
-	const rowBoards = activeRows(boardIdx);
+	const rowBoards = getRows(boardIdx);
 
 	for (const row of rowBoards) {
 		if (row !== boardIdx) result[row] = getRows(cellIdx);
