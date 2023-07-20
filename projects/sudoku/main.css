@@ -1,0 +1,63 @@
+:root {
+	--dark: #161c24;
+	--light: #ffffff;
+	--gray: #94a3b7;
+	--active: #c2deff;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.sudoku {
+	width: 600px;
+	height: 600px;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	background-color: var(--dark);
+	gap: 2px;
+	padding: 2px;
+}
+
+.board {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	background-color: var(--gray);
+	gap: 1px;
+}
+
+.cell {
+	display: grid;
+	position: relative;
+	place-items: center;
+	background-color: var(--light);
+	font-size: 24px;
+	user-select: none;
+	font-weight: bold;
+	transition: 0.03s linear transform;
+	cursor: pointer;
+}
+
+.cell.active {
+	background-color: var(--active);
+}
+
+.cell:active {
+	transform: scale(0.95);
+}
+
+.cell .info {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 14px;
+	background-color: var(--dark);
+	color: var(--light);
+	width: max-content;
+}
