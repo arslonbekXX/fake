@@ -1,6 +1,4 @@
-# ---------- 18.07.23 ----------(55)
-
-## Checking homeworks(Tic tac toe (with history))
+# ---------- 22.07.23 ----------(58)
 
 ## Projects
 
@@ -22,16 +20,15 @@
     ✅ git add 👍🏻
     ✅ git status 👍🏻
     ✅ git commit 👍🏻
-    ✅ git remote
-    ✅ git checkout
-    ✅ git push
-    ✅ git pull
+    ✅ git remote 👍🏻
+    ✅ git checkout 👍🏻
+    ✅ git push 👍🏻
+    ✅ git fetch 👍🏻
+    ✅ git merge 👍🏻
     ✅ git config
-    ✅ git fetch
-    ✅ git merge
     ✅ git branch
     ✅ git log
-    ✅ git clone
+    ✅ git clone 👍🏻
     ------------
     ✅ git stash
     ✅ git diff
