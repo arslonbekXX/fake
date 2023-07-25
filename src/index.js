@@ -1,4 +1,1 @@
-const person = {
-	name: "arslonbek",
-	age: 20,
-};
+console.log("Examine-5");
