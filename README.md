@@ -1,4 +1,4 @@
-# ---------- 22.07.23 ----------(58)
+# ---------- 23.07.23 ----------(59)
 
 ## Projects
 
@@ -25,7 +25,7 @@
     ✅ git push 👍🏻
     ✅ git fetch 👍🏻
     ✅ git merge 👍🏻
-    ✅ git config
+    ✅ git config 👍🏻
     ✅ git branch
     ✅ git log
     ✅ git clone 👍🏻
