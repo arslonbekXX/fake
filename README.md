@@ -18,6 +18,15 @@
 
 # Expression vs Statement
 
+# Typescript
+
+    ✅ type
+    ✅ interface
+    ✅ extends and implements
+    ✅ private and public
+    ✅ class
+    ✅ Generic types
+
 # JS OOP
 
     ✅ Object
