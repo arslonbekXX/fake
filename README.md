@@ -1,6 +1,6 @@
 # ---------- 01.07.23 ----------(62)
 
-## [Examine-5](https://bit.ly/3ODz3lq)
+## [Examine-5](https://bit.ly/3ODz3lq) 👍🏻
 
 # JS Advanced
 
@@ -10,7 +10,6 @@
     ✅ Functional Programming && Closure
     ✅ JS Execution && Event Loop
     ✅ JS Modules
-    ✅ Collections && Generators **
     ✅ Getters && Setters
     ✅ Promises && Async/Await
     ✅ NPM Package
