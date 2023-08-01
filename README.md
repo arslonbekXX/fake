@@ -1,21 +1,40 @@
-# ---------- 29.07.23 ----------(61)
+# ---------- 01.07.23 ----------(62)
 
-## Git Commands
+## [Examine-5](https://bit.ly/3ODz3lq)
 
-    ✅ git init 👍🏻
-    ✅ git add 👍🏻
-    ✅ git status 👍🏻
-    ✅ git commit 👍🏻
-    ✅ git remote 👍🏻
-    ✅ git checkout 👍🏻
-    ✅ git push 👍🏻
-    ✅ git fetch 👍🏻
-    ✅ git merge 👍🏻
-    ✅ git pull (fetch+merge) 👍🏻
-    ✅ git config 👍🏻
-    ✅ git branch
-    ✅ git clone 👍🏻
-    ------------
-    ✅ git log 👍🏻
-    ✅ git stash 👍🏻
-    ✅ git diff
+# JS Advanced
+
+    ✅ Expression vs Statement
+    ✅ OOP && Object.create && Object.assign
+    ✅ Prototype && Prototype Chain
+    ✅ Functional Programming && Closure
+    ✅ JS Execution && Event Loop
+    ✅ JS Modules
+    ✅ Collections && Generators **
+    ✅ Getters && Setters
+    ✅ Promises && Async/Await
+    ✅ NPM Package
+    ✅ Backend && AJAX && Fetch
+    ✅ Clean Code
+
+# Expression vs Statement
+
+# JS OOP
+
+    ✅ Object
+    ✅ this keyword
+    ✅ call && bind && apply function methods
+    ✅ Factory function
+    ✅ Constructor function
+    ✅ new keyword
+    ✅ Abstraction
+    ✅ Private Properties and Methods
+    ✅ Getters and Setters
+    ✅ Object.defineProperty && Object.freeze && Object.hasOwnProperty
+    ✅ Coding Challenge
+
+    ✅ Class
+    ✅ Constructor
+    ✅ Inheritance
+
+# [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
