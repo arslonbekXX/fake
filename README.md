@@ -1,10 +1,8 @@
-# ---------- 01.07.23 ----------(62)
-
-## [Examine-5](https://bit.ly/3ODz3lq) 👍🏻
+# ---------- 03.07.23 ----------(63)
 
 # JS Advanced
 
-    ✅ Expression vs Statement
+    ✅ Expression vs Statement 👍🏻
     ✅ OOP && Object.create && Object.assign
     ✅ Prototype && Prototype Chain
     ✅ Functional Programming && Closure
@@ -16,7 +14,11 @@
     ✅ Backend && AJAX && Fetch
     ✅ Clean Code
 
-# Expression vs Statement
+# Expression vs Statement 👍🏻
+
+# Method
+
+    ✅ method vs function 👍🏻
 
 # Typescript
 
@@ -29,9 +31,9 @@
 
 # JS OOP
 
-    ✅ Object
-    ✅ this keyword
-    ✅ call && bind && apply function methods
+    ✅ Object 👍🏻
+    ✅ this keyword 👍🏻
+    ✅ call && bind && apply function methods 👍🏻
     ✅ Factory function
     ✅ Constructor function
     ✅ new keyword
