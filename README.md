@@ -1,4 +1,4 @@
-# ---------- 03.07.23 ----------(63)
+# ---------- 05.07.23 ----------(64)
 
 # JS Advanced
 
@@ -13,12 +13,6 @@
     ✅ NPM Package
     ✅ Backend && AJAX && Fetch
     ✅ Clean Code
-
-# Expression vs Statement 👍🏻
-
-# Method
-
-    ✅ method vs function 👍🏻
 
 # Typescript
 

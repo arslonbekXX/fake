@@ -1,115 +1,7 @@
 "use strict";
-/* 01.08.23(62) */
+/* 05.08.23(64) */
 
-// const person = {
-// 	name: "Kent",
-// 	age: 20,
-// 	address: {
-// 		state: "UZB",
-// 		city: "Tashkent",
-// 	},
-// };
-
-// const person1 = { ...person, address: { ...person.address } };
-// person1.age = 30;
-
-// person1.address.state = "ENG";
-
-// console.log(person.address.state); // ENG
-
-/**
- * HEAP MEMORY
- * 0001 = { name: "Kent", run: HM_0002, jump: HM_0003 }
- * 0002 = [fn]
- * 0003 = [fn]
- *
- *
- */
-// const person = {
-// 	name: "Kent",
-// 	run: function () {
-// 		console.log("Kent is running...");
-// 	},
-// 	jump() {
-// 		console.log("Kent is jumping...");
-// 	},
-// };
-
-// person.run();
-// person.jump();
-
-// const kentPerson = {
-// 	name: "Kent",
-// 	run() {
-// 		console.log(`${this.name} is running...`);
-// 	},
-// };
-
-// const person1 = {
-// 	name: "Mark",
-// 	run() {
-// 		console.log(`${this.name} is running...`);
-// 	},
-// };
-
-// kentPerson.run();
-// person1.run();
-
-// function app() {
-// 	console.log(this);
-// }
-
-// app();
-
-// const test = {
-// 	groups: ["g-7", "g-19"],
-// 	tag: "h1",
-// 	convertor() {
-// 		return this.groups.map((group) => `<${this.tag}>${group}</${this.tag}>`);
-// 	},
-// };
-
-// const result = test.convertor(); //
-
-// console.log(result);
-
-// const person1 = {
-// 	name: "Kent",
-// 	run() {
-// 		console.log(`[🏃‍♂️] ${this.name} is running...`);
-// 	},
-// 	fullName() {
-// 		console.log(this.name, person1.name);
-// 	},
-// };
-
-// const person2 = {
-// 	name: "Maya",
-// 	run() {
-// 		console.log(`[🏃‍♀️] ${this.name} is running...`);
-// 	},
-// 	fullName() {
-// 		console.log(this.name, person2.name);
-// 	},
-// };
-
-// const myRun = person1.run.bind(person2);
-// const myRun2 = myRun.bind(person1);
-
-// myRun();
-// myRun2();
-
-// const math = {
-// 	init: 20,
-// 	summa(a, b, c) {
-// 		return this.init + a + b + c;
-// 	},
-// };
-
-// const math2 = { init: 30 };
-// const result = math.summa.apply(math2, [10, 20, 30]);
-// console.log(result);
-
+/* Factory Function */
 const methods = {
 	eat() {
 		console.log(`${this.name} is eating...`);
@@ -131,12 +23,36 @@ function createBox(name, size, color) {
 	return box;
 }
 
-const colors = ["red", "green", "blue", "yellow"];
-const color = () => colors[Math.floor(Math.random() * colors.length)];
+// const box1 = createBox("Box-1", 20, "Red");
+// const box2 = createBox("Box-2", 40, "Black");
 
-const boxes = [];
-for (let i = 0; i < 10; i++) {
-	const box = createBox(`Box-${i + 1}`, 10 * i, color());
-	box.eat()
-	boxes[i] = box;
+// console.log("box1 = ", box1);
+// console.log("box2 = ", box2);
+
+// const str = "lion"; // new String("lion").valueOf()
+
+/* Constructor Function */
+function Box(name, size, color) {
+	this.name = name;
+	this.size = size;
+	this.color = color;
 }
+
+
+Box.prototype.run = function () {
+	console.log(`${this.name} is running...`);
+};
+Box.prototype.eat = function () {
+	console.log(`${this.name} is eating...`);
+};
+Box.prototype.jump = function () {
+	console.log(`${this.name} is jumping...`);
+};
+
+const box1 = new Box("Box-1", 20, "Black");
+console.log(box1);
+
+const box2 = new Box("Box-2", 40, "Red");
+console.log(box2);
+
+console.log(box1.run === box2.run);
