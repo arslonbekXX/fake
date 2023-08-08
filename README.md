@@ -31,7 +31,6 @@
     ✅ Factory function
     ✅ Constructor function
     ✅ new keyword
-    ✅ Abstraction
     ✅ Private Properties and Methods
     ✅ Getters and Setters
     ✅ Object.defineProperty && Object.freeze && Object.hasOwnProperty
