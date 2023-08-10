@@ -1,3 +1,3 @@
-export function subtract(firstNumber: number, secondNumber: number): number {
-	return firstNumber - secondNumber;
+export function hi(name: string) {
+	console.log(`Hello ${name}`);
 }
