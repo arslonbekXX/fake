@@ -1,0 +1,24 @@
+{
+	"name": "webpack-typescript",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"repository": "https://github.com/PDP-FRONTEND/PDP-G-10.git",
+	"author": "arslonbekXX <arslonbek.lion067@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "webpack-dev-server --mode development",
+		"build": "webpack --mode production"
+	},
+	"devDependencies": {
+		"css-loader": "^6.8.1",
+		"html-webpack-plugin": "^5.5.3",
+		"mini-css-extract-plugin": "^2.7.6",
+		"ts-loader": "^9.4.4",
+		"webpack": "^5.88.2",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^4.15.1"
+	},
+	"dependencies": {
+		"typescript": "^5.1.6"
+	}
+}
