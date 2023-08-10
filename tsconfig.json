@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"module": "commonjs",
+		"rootDir": "./src",
+		"outDir": "./dist",
+		"strictPropertyInitialization": false,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"alwaysStrict": false,
+		"skipLibCheck": true,
+		"noEmitOnError": true,
+		"allowJs": false
+	}
+}
