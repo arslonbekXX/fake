@@ -1,5 +1,10 @@
 # ---------- 17.07.23 ----------(68)
 
+# Homeworks
+
+    ✅ Try and catch block
+    ✅ Throw exception
+
 # JS Advanced
 
     ✅ Expression vs Statement 👍🏻
