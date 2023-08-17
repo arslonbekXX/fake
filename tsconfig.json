@@ -3,6 +3,7 @@
 		"noImplicitAny": true,
 		"target": "ES6",
 		"module": "ES2015",
-		"noEmitOnError": true
+		"noEmitOnError": true,
+		"alwaysStrict": true
 	}
 }

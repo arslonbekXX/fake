@@ -1,8 +1,19 @@
 import { Box } from "./box";
+import { random } from "./utils";
 
-const box1 = new Box("Box-1");
+function init() {
+	const boxes: Box[] = [];
 
-const box2 = new Box("Box-2", box1);
+	for (let i = 1; i <= 10; i++) {
+		const box = new Box(`Box-${i}`, 100);
+		boxes.push(box);
+	}
 
-box1.hi();
-box2.hi();
+	for (let box of boxes) {
+		const friends = boxes.filter((b) => b !== box);
+		box.setFriends(friends);
+		box.move();
+	}
+}
+
+init();
