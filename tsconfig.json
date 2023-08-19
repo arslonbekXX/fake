@@ -4,6 +4,8 @@
 		"target": "ES6",
 		"module": "ES2015",
 		"noEmitOnError": true,
-		"alwaysStrict": true
+		"alwaysStrict": true,
+		"allowJs": true,
+		"skipLibCheck": false
 	}
 }
