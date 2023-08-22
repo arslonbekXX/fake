@@ -1,9 +1,11 @@
-# ---------- 19.07.23 ----------(69)
+# ---------- 22.07.23 ----------(70)
 
-# Homeworks
+# Checking homeworks
 
-    ✅ Try and catch block
-    ✅ Throw exception
+# Netlify Deploying
+
+    ✅ Drag and drop
+    ✅ With github repo
 
 # JS Advanced
 
